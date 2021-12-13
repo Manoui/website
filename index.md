@@ -25,10 +25,17 @@ Graph interactif+ résultats intéressants, plus en mode rapport
 
 
 Analyzing the fame of a quote is of high interest for example for politicians or brands. Indeed, they are seeking to generate a quote that sticks in your head. But what makes the fame of a quote ? Does it depend on the speaker, on the content, on the length of a quote ?
+
+
 Here down you can select some parameters and see their distribution across famous and 'non-famous' quotes. Which features do you predict can differentiate famous from non-famous quotes ?
 
-Now let see if you were right :)
+{% include proportion_features_famous_nonfamous.html %}
 
+
+Now let see if you were right :)
+Using logistic regression as supervised learning to try to classify whether a quote will be famous or not, the coefficient contributing the most are displayed here below.
+
+{% include logistic_regression_coefficients.html %}
 
 
 
@@ -49,7 +56,6 @@ For some context : Wikipedia is the free online encyclopedia that we all know an
 Before getting started, we also wanted to introduce the [Wikipedia bureaucrats](https://en.wikipedia.org/wiki/Category:Wikipedia_bureaucrats). Indeed, these bureaucrats are amongst others the ones deciding on when an election will be closed and on the outcome of the latter. Do they accord the same duration to every election and do they declare success of election if at least half of the casted votes is positive? Be patient, you'll discover! 
 
 
-{% include proportion_features_famous_nonfamous.html %}
 
 **We do not want to make you wait any longer, so tell us what you got Wikipedia!**
 
@@ -63,7 +69,6 @@ Let's take a look. Its is important for further analysis to firstly observe how 
 *How did the number of elections vary over time ?*
 To play around with the time length, click on the tiny lines in the legend!
 
-{% include logistic_regression_coefficients.html %}
 
 Very interestingly, we can notice an **exponential-like increase** in the number of elections between 2004 (70 elections), 2005 (150 elections), 2006 (360 elections), and 2007 (2100 elections).
 The numbers of elections are approximated here for better understanding.
