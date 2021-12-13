@@ -165,8 +165,3 @@ Finally, we looked at the influence of neutral votes in an election. There tends
 
 All in all, play it safe, simply do a good job, be kind and respectful, and keep editing those Wikipedia articles, we guarantee that this will get you elected! 
 
----
-member: Elodie Adam
-mission: Word
----
-
