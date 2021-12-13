@@ -25,10 +25,8 @@ While you are waiting for the fame to come thanks to your quote, you can explore
 Graph interactif+ résultats intéressants, plus en mode rapport
 
 
-
-Analyzing the fame of a quote is of high interest for example for politicians or brands. Indeed, they are seeking to generate a quote that sticks in your head. But what makes the fame of a quote ? Does it depend on the speaker, on the content, or on the length of a quote ?
-
 ### Data Overview
+Analyzing the fame of a quote is of high interest for example for politicians or brands. Indeed, they are seeking to generate a quote that sticks in your head. But what makes the fame of a quote ? Does it depend on the speaker, on the content, or on the length of a quote ?
 
 First of all let see which speakers emitted the most famous quotes during the years 2015-2020. Unsurprisingly we see Donald Trump in the first place ! He is even indirectly mentionned in the most famous quote of Pope Francis “A person who thinks only about building walls …”. It is also very interesting to see that politicians emitted the largest number of famous quotes, as they are highly mediatized and all their words are reported and analyzed in newspapers.
 
@@ -40,10 +38,9 @@ The graph below shows the number of famous quotes emitted over time (2015-2020) 
 * The Pope Francis visits Washington and New York City on the 24th of September 2015 “Thank you very much -- and God bless America!”
 * The peak in April 2018 of Emmanuel Macron correspond to its speech to the Congress of the United States of America. 
 
-
 {% include famous_speakers_timeseries.html %}
 
-You can also appreciate the distribution of the features of the speaker all over the world:
+Let us now look at the proportion of famous quotes and non-famous quotes around the globe, as well as their co-occurrence with other features from the speakers emitting the quote.
 
 {% include proportion_geo_famous.html %}
 
