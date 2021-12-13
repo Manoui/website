@@ -47,7 +47,7 @@ Let us now look at the proportion of famous quotes and non-famous quotes around 
 
 ### Data distribution
 
-Here down you can select some parameters and see their distribution across famous and 'non-famous' quotes. Which features do you predict can differentiate famous from non-famous quotes ?
+Now it is your turn to take guesses on what makes the fame of a quote by selecting some parameters and see their distribution across famous and ‘non-famous’ quotes. Which features do you predict can differentiate famous from non-famous quotes ?
 
 {% include proportion_features_famous_nonfamous.html %}
 
