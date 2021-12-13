@@ -66,7 +66,7 @@ We just could NOT resist making a few comments about these plots, so here they a
 ***About the elections* (second plot):***
 What about the *large green bubble* ? It accounts for the near-thousand elections was were closed in the month of May 2007 -- encompassing two of our election-closure pics!
 
-{% include proportion_geo_features.html %}
+{% include proportion_geo_famous.html %}
 
 ## DURATION 
 O.K., so now you have chosen the perfect date for your election to be held (or not, as there might not be a perfect date). But it is not the only parameter to take into account if you want to maximize your chances of being elected. Another important point is the duration of the election. As Wikipedia elections are public and a discussion between voters can happen over all of the election duration, we can try and identify the optimal election duration during which you should campaign and hope that after the latter is over your election gets closed.
