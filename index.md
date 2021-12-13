@@ -7,9 +7,9 @@ How social network structure potentially influences voting in a time-dependent m
 
 {% include logistic_regression_coefficients.html %}
 
-{% include word_occurrences.html %}
+{% include word_occurrence.html %}
 
-{% include word_stopwordss.html %}
+{% include word_occurrence_stopwordss.html %}
 
 
 
