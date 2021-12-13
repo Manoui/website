@@ -20,7 +20,6 @@ Let's take a look. Its is important for further analysis to firstly observe how 
 *How did the number of elections vary over time ?*
 To play around with the time length, click on the tiny lines in the legend!
 
-{% include elec_timenbr_elecFalse.html %}
 
 
 Very interestingly, we can notice an **exponential-like increase** in the number of elections between 2004 (70 elections), 2005 (150 elections), 2006 (360 elections), and 2007 (2100 elections).
@@ -28,7 +27,7 @@ The numbers of elections are approximated here for better understanding.
 Let's plot this with a log-scaled y-axis to investigate the exponential-like increase.
 From the graph below, we can see a straight line for the years 2004, 2005, and 2006. However, the massive increase in the number of elections in 2007 was so large that it grew even faster than an exponential function.
 
-{% include elec_timenbr_elecTrue.html %}
+
 
 O.K., let's now go back to the first plot. Click on the tiny blue line to display the analysis by day. 
 The first thing that pops out are the peaks on May 3rd, 2007, during which more than 300 elections were closed, on May 26th with more than 200 elections being closed, and on December 4th with above 100 elections being closed. This raises some questions. What happened on these days ? Well, we found out that the famous Swiss illustrator Warja Lavator died on May 3rd, 2007. She was so talented, the bureaucrats could have closed the elections so that everyone could mourn in peace? Hmm... Seems unlikely. 
@@ -36,12 +35,10 @@ Rather, it could well be that Wikipedia bureaucrats decided to close a number of
 
 Anyway, what about the number of votes? We could easily suppose that they tend to follow a similar trend than the number of elections, but let's actually verify it. 
 
-{% include vote_timenbr_voteFalse.html %}
 
 Plot twist : the three peaks previously mentioned cannot be observed. This means that these three days were not particularly intense in terms of votes even though many elections were closed by bureaucrates on these days. It supports the hypothesis that Wikipedia bureaucrats 'cleaned up' the elections on these three days. 
 It is clear that overall, the number of elections and votes have increased between 2004 and 2008. But what about the election outcomes? 
 
-{% include elec_timeavg_elecFalse.html %}
 
 Well, it appears that the election outcome is highly variable over time. It fluctuates over months, weeks and days. And on top of that, it seems to vary in a non-periodic fashion! This can be seen through the very irregular patterns displayed on the plot.  
 Overall, it suggests that closing an election at Christmas time, or at any other time for that matter, is far from being a guarantee that you will be elected... 
@@ -51,9 +48,6 @@ Now that you have a *perfect* understanding of the 'basic concepts' that we just
 **Have fun and play with the plot! It supports the interpretations we made previously!**
 Feel free to investigate the graphs by activating the traces for averaging over different time ranges and/or by zooming in! The number of elections or votes is visualized by the diameter of the bubbles.
 
-{%include vote_timeavg_votebubbles.html %}
-
-{%include elec_timeavg_elecbubbles.html %}
 
 We just could NOT resist making a few comments about these plots, so here they are :   
 ***About the votes (first plot):***
@@ -69,16 +63,12 @@ What about the *large green bubble* ? It accounts for the near-thousand election
 O.K., so now you have chosen the perfect date for your election to be held (or not, as there might not be a perfect date). But it is not the only parameter to take into account if you want to maximize your chances of being elected. Another important point is the duration of the election. As Wikipedia elections are public and a discussion between voters can happen over all of the election duration, we can try and identify the optimal election duration during which you should campaign and hope that after the latter is over your election gets closed.
 We analyse a large variety of durations to get a good grasp on the influence of this parameter. 
 
-<img src="images/duration1.png" width="600" height="300">
 
 Let's also check if the different distributions of election durations are different between succeeded and failed elections.
 
-<img src="images/duration2.png" width="800" height="300">
 
 More than 75% of the elections lasted less than 180 hours, meaning less than 2 weeks. In order to obtain a satisfying representation while preserving its meaning and relevance, we will plot the fraction of positive votes for each election with respect to its duration, while only considering elections lasting less than 250 hours for a statistical reason that you do not need to care about as we already did so for you.  
 
-
-<img src="images/duration3.png" width="600" height="300">
 
 
 We can clearly see 2 clusters. Elections that lasted close to 250 hours are more likely to have a positive outcome. On top of that, elections that only lasted a very brief amount of time, meaning less than 50 hours, are way more likely to end with a negative outcome. 
@@ -88,7 +78,6 @@ Let's however note that the first mentionned cluster is actually composed of bot
 Keep in mind, the fraction of positive votes over the total number of votes is not always indicative of the election outcome. Bureaucrats have the power to make an election unsuccessful even if the fraction of positive votes exceeded 50%. You might be thinking : *Wikipedia ? What about democracy ? The voice of the people ?*  
 We also want to group the elections by durations (in hours, up to second precision) and plot the fraction of elections with a positive outcome for each duration.
 
-<img src="images/duration4.png" width="550" height="300">
 
 What does this plot tells us ? Well, firstly it seems coherent with the previous one, meaning that longer elections appear to display a higher ratio of positive outcomes than elections lasting a shorter amount of time. Among the elections lasting less than 100 hours, very few of them had a positive outcome. On another note, it is also important to notice that having a long election does not guarantee a victory. Quite a few long elections had negative results.
 
@@ -101,7 +90,6 @@ In this next part, we analyse the evolution of the votes throughout an election 
 
 Below is a plot representing the average vote with respect to time for all elections, both successful and failed. In case you are not sure what this average vote tells you, an average vote over 0 means that, so far, overall more positive than negative votes have been casted and the exact opposite is true for an average vote under 0.
 
-{% include time2.html %}
 
 As we can see, a few elections have lasted a very long time compared to the rest, as already discovered beforehand, making it hard to observe any clear pattern at first. However, we can see that the longest elections had a positive outcome, which is consistent with our previous analysis as well. 
 - Only few elections had a strongly positive or negative tendency, and those that displayed such a tendency lasted only a very short amount of time. This tells us that if an election takes a strong tendency from the very beginning, bureaucrats are more likely to consider it a foregone conclusion and close it. It might seem understandable, but that yields an open door for you if you have a large social network and know a lot of people that could vote in your favour! Call your friends, your family, your colleagues, tell them to vote for you really quick, and you could have it in the bag. 
@@ -113,7 +101,6 @@ But don't get too confident just yet. In fact, we have computed that while 73.6%
 
 Let's take a closer look at the elections whose duration did not exceed the third quartile of the distribution of the durations (statistics again, sorry for that but we could not resist, consider it to be about 170 hours if that sounds more understandable to you). 
 
-{% include time3.html %}
 
 Weirdly, a few failed elections have an overall positive average vote, they thus have a higher overall number of positive than negative votes. However, we could not find any succeeded elections that have an overall negative mean vote with the naked eye, thus a higher number of negative than positive votes. Additionally, many elections have a final average vote very close to zero, correspoding to 50% positive and 50% negative votes. 
 Aiming for 50% positive votes for your election will thus not be enough to ensure your success! 
@@ -138,7 +125,6 @@ Now, what does this mean for you? Well, it is very probably not enough to get al
 You might now of course be interested while tracking the votes casted for your election if you should already take out a bottle of champagne to celebrate or not. 
 Let's take a quick look at the election outcomes as one would predict them after half of the total election duration and their true outcome. 
 
-{% include correctly_vs_wrongly.html %}
 
 That does look somewhat confusing to you maybe but no worries, we put the message behind this graph into numbers for you. Long story short, there is a **20%** chance that the election outcome might still switch around until the end of the election. So don't just start your celebration yet, no one likes people that claim victory before they've actually won ([we have no one specific in mind of course](https://www.youtube.com/watch?v=W9d6j2uO6MI)). Concerning your bottle of champagne however, keep it within reach, [in case of victory you'll deserve it, in case of defeat you'll need it](https://vinepair.com/articles/fake-drinking-quotes/).
 
@@ -151,7 +137,6 @@ We dove into the elections where at least one neutral vote was casted per electi
 **Neutral votes and the election outcome**
 We have investigated whether or not neutral votes can correlate with the outcome of the election. There is indeed a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
 
-<img src="images/neutralvotes2.png" width="400" height="600">
 
 We can see that a high fraction of neutral votes is correlated with a negative outcome of the election. This could be interpreted in several ways, since we do not have not much additional information on how these votes are taken into account by Wikipedia bureaucrats. 
 One could suppose that voters did not have a set opinion on you, the adminship seeker, and they thus decided to vote neutral. This could be explained by the fact that your campaign was not strong enough to really convince the people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. This seems rather unlikely to us as no one is forced to cast their vote for every election so why would they make the effort to cast a neutral vote? But who knows...
@@ -162,7 +147,6 @@ Let's be honest, in all three cases, your feelings might have been spared, but o
 **Neutral votes and duration of elections**
 Another correlation that can be investigated is the one between the proportion of neutral votes and the duration of the elections. If a larger fraction of neutral votes are casted, one could suppose that more people are perplex about you candidacy, and that overall it would take more time to settle for an election outcome. 
 
-<img src="images/neutralvotes3.png" width="600" height="300">
 
 We can see that most of the unsuccessful elections counted a higher fraction of neutral votes compared to the successful ones, as said previously. We could infer that over a specific threshold percentage of neutral votes, namely over 20% of neutral votes, you will have very little chance of being elected. Also, with a same final ratio of neutral votes, an election is more likely to be successful if it lasted for a longer period of time. However, the duration of the election per se does not seem to be correlated with the fraction of neutral votes that were casted. 
 
