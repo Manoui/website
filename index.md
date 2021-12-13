@@ -26,14 +26,14 @@ Let's take a look. Its is important for further analysis to firstly observe how 
 *How did the number of elections vary over time ?*
 To play around with the time length, click on the tiny lines in the legend!
 
-
+{% include logistic_regression_coefficients.html %}
 
 Very interestingly, we can notice an **exponential-like increase** in the number of elections between 2004 (70 elections), 2005 (150 elections), 2006 (360 elections), and 2007 (2100 elections).
 The numbers of elections are approximated here for better understanding.
 Let's plot this with a log-scaled y-axis to investigate the exponential-like increase.
 From the graph below, we can see a straight line for the years 2004, 2005, and 2006. However, the massive increase in the number of elections in 2007 was so large that it grew even faster than an exponential function.
 
-
+{% include famous_speakers_timeseries.html %}
 
 O.K., let's now go back to the first plot. Click on the tiny blue line to display the analysis by day. 
 The first thing that pops out are the peaks on May 3rd, 2007, during which more than 300 elections were closed, on May 26th with more than 200 elections being closed, and on December 4th with above 100 elections being closed. This raises some questions. What happened on these days ? Well, we found out that the famous Swiss illustrator Warja Lavator died on May 3rd, 2007. She was so talented, the bureaucrats could have closed the elections so that everyone could mourn in peace? Hmm... Seems unlikely. 
