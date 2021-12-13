@@ -1,5 +1,28 @@
-What can we learn from Wikipedia adminship elections ? 
-How social network structure potentially influences voting in a time-dependent manner: analysis of a signed social network. 
+
+
+“Shoot for the moon. Even if you miss, you'll land among the stars.” Norman Vincent Peale
+Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to be famous? Then this website might help you!
+First, try to write something, we’ll tell you if your words will become famous:
+-WIDGET (predict if sentence famous or not)-
+(train a model only on quote features so the user doesn’t have to enter any info or ask for nationality, gender etc?)
+
+Display a sentence based on the result:
+-If ‘not famous’: Ouch too bad, did you really mean to say that? It sucks maybe, try our famous quote generator 
+peut être marrant de mettre des phrases hyper cassantes comme sur How Bad Is Your Streaming Music? (pudding.cool)
+-If ‘famous’: Wow impressive you’re definitely going somewhere with that spirit!
+
+Anyway you better try our famous quote generator if you want to succeed, enter the first words of your sentence and the length of words and here we go:
+-WIDGET (quote generator)-
+
+Inspiring no? Post it right away on twitter or instagram and let the magic happen
+-WIDGET (put the quote on a ‘inspirational quote background’)-
+Un truc qui génère des images de ce type ça pourrait être marrant, avec un truc pour les poster direct sur insta ou fb haha
+
+ 
+While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous:
+Graph interactif+ résultats intéressants, plus en mode rapport
+
+
 
 {% include famous_speakers.html %}
 
