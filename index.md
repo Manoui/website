@@ -164,3 +164,9 @@ When it comes to time, keep in mind that 50% of positive votes are not enough to
 Finally, we looked at the influence of neutral votes in an election. There tends to be a higher proportion of neutral votes in failed elections than in successful ones, but the proportion of neutral votes does not seem to be correlated with the duration of the election. You should thus try to really convince people to make sure you win your election and not just try to not make them hate you.
 
 All in all, play it safe, simply do a good job, be kind and respectful, and keep editing those Wikipedia articles, we guarantee that this will get you elected! 
+
+---
+member: Elodie Adam
+mission: Word
+---
+
