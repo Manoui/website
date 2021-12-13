@@ -24,12 +24,14 @@ Graph interactif+ résultats intéressants, plus en mode rapport
 
 
 
+Analyzing the fame of a quote is of high interest for example for politicians or brands. Indeed, they are seeking to generate a quote that sticks in your head. But what makes the fame of a quote ? Does it depend on the speaker, on the content, or on the length of a quote ?
+
 ### Data Overview
 
-Some example of speakers with the most number of famous quotes and their top quote.
+First of all let see what speakers emitted the most famous quotes during the years 2015-2020, and unsurprisingly we see Donald Trump in the first place ! He is even indirectly mentionned in the most famous quote of Pope Francis "A person who thinks only about building walls ...". It is very interesting to see that most famous quotes are related to politicians over the world, as they are highly mediatized and all their words are precisely analyzed (... or critized) in newspapers. 
 {% include famous_speakers.html %}
 
-Select:
+The graph below shows the number of famous quotes emitted by the top 20 of the previous speakers over time. 
 {% include famous_speakers_timeseries.html %}
 
 World map:
@@ -38,7 +40,6 @@ World map:
 
 ### Data distribution
 
-Analyzing the fame of a quote is of high interest for example for politicians or brands. Indeed, they are seeking to generate a quote that sticks in your head. But what makes the fame of a quote ? Does it depend on the speaker, on the content, on the length of a quote ?
 
 
 Here down you can select some parameters and see their distribution across famous and 'non-famous' quotes. Which features do you predict can differentiate famous from non-famous quotes ?
