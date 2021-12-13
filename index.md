@@ -46,6 +46,8 @@ Rather, it could well be that Wikipedia bureaucrats decided to close a number of
 
 Anyway, what about the number of votes? We could easily suppose that they tend to follow a similar trend than the number of elections, but let's actually verify it. 
 
+{% include word_occurrence_stopwords.html %}
+
 
 Plot twist : the three peaks previously mentioned cannot be observed. This means that these three days were not particularly intense in terms of votes even though many elections were closed by bureaucrates on these days. It supports the hypothesis that Wikipedia bureaucrats 'cleaned up' the elections on these three days. 
 It is clear that overall, the number of elections and votes have increased between 2004 and 2008. But what about the election outcomes? 
