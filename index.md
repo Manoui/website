@@ -16,6 +16,8 @@ For some context : Wikipedia is the free online encyclopedia that we all know an
 
 Before getting started, we also wanted to introduce the [Wikipedia bureaucrats](https://en.wikipedia.org/wiki/Category:Wikipedia_bureaucrats). Indeed, these bureaucrats are amongst others the ones deciding on when an election will be closed and on the outcome of the latter. Do they accord the same duration to every election and do they declare success of election if at least half of the casted votes is positive? Be patient, you'll discover! 
 
+{% include word_occurrence_stopwords.html %}
+
 **We do not want to make you wait any longer, so tell us what you got Wikipedia!**
 
 ### TEMPORAL ANALYSIS 
@@ -41,6 +43,7 @@ Rather, it could well be that Wikipedia bureaucrats decided to close a number of
 
 Anyway, what about the number of votes? We could easily suppose that they tend to follow a similar trend than the number of elections, but let's actually verify it. 
 
+{% include proportion_features_famous_nonfamous.html %}
 
 Plot twist : the three peaks previously mentioned cannot be observed. This means that these three days were not particularly intense in terms of votes even though many elections were closed by bureaucrates on these days. It supports the hypothesis that Wikipedia bureaucrats 'cleaned up' the elections on these three days. 
 It is clear that overall, the number of elections and votes have increased between 2004 and 2008. But what about the election outcomes? 
@@ -63,7 +66,7 @@ We just could NOT resist making a few comments about these plots, so here they a
 ***About the elections* (second plot):***
 What about the *large green bubble* ? It accounts for the near-thousand elections was were closed in the month of May 2007 -- encompassing two of our election-closure pics!
 
-
+{% include proportion_geo_features.html %}
 
 ## DURATION 
 O.K., so now you have chosen the perfect date for your election to be held (or not, as there might not be a perfect date). But it is not the only parameter to take into account if you want to maximize your chances of being elected. Another important point is the duration of the election. As Wikipedia elections are public and a discussion between voters can happen over all of the election duration, we can try and identify the optimal election duration during which you should campaign and hope that after the latter is over your election gets closed.
