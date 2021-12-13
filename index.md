@@ -29,12 +29,15 @@ Analyzing the fame of a quote is of high interest for example for politicians or
 ### Data Overview
 
 First of all let see what speakers emitted the most famous quotes during the years 2015-2020, and unsurprisingly we see Donald Trump in the first place ! He is even indirectly mentionned in the most famous quote of Pope Francis "A person who thinks only about building walls ...". It is very interesting to see that most famous quotes are related to politicians over the world, as they are highly mediatized and all their words are reported and analyzed in newspapers. 
+
 {% include famous_speakers.html %}
 
 The graph below shows the number of famous quotes emitted by the top 20 of the previous speakers over time. 
+
 {% include famous_speakers_timeseries.html %}
 
 You can also appreciate the distribution of the features of the speaker all over the world:
+
 {% include proportion_geo_famous.html %}
 
 
