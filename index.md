@@ -1,6 +1,8 @@
 What can we learn from Wikipedia adminship elections ? 
 How social network structure potentially influences voting in a time-dependent manner: analysis of a signed social network. 
 
+{% include famous_speakers.html %}
+
 
 Politics are everywhere. 
 From seeking to be the class representative of your 5th grade class, to announcing you will be running for president (never say never, sometimes dreams DO come true), you are most likely to be involved in some kind of election throughout your life. 
