@@ -51,11 +51,20 @@ Now it is your turn to take guesses on what makes the fame of a quote by selecti
 
 {% include proportion_features_famous_nonfamous.html %}
 
-### Data results
-## The importance of words
+## Data results
+
+### The importance of words
+Did you think about the importance of words ? What words would you expect to see based on previous observations ? 
+Now let see if you were right :)
+
 {% include word_occurrence_stopwords.html %}
 
-Now let see if you were right :)
+In the plot below you can slide over the plot with your cursor to see the most used words in famous versus non-famous quotes. There are a lot of similarities in the highly frequent words, such as the use of ‘people’, ‘going’, ‘think’, etc. But some frequent words are specific to the famous quotes: ‘us’, ‘president’, ‘country’, etc. as compared to ‘like’, ‘really’, ’time’ in non-famous quotes.
+These relates to what you previously observed, in the majority of famous quotes are neutral, as comapred to most positive quotes in non-famous ones. Moreover, you saw the high proportion of politician speakers in both the famous and non-famous dataset, which also explains the occurence of some specific words.
+
+**_Vérifier proportions qui ne somment pas à 1…_**
+
+
 Using logistic regression as supervised learning to try to classify whether a quote will be famous or not, the coefficient contributing the most are displayed here below.
 
 {% include logistic_regression_coefficients.html %}
