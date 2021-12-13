@@ -24,6 +24,8 @@ Before getting started, we also wanted to introduce the [Wikipedia bureaucrats](
 If you could choose the time of year your election will be held, would a certain move be more strategic than another? We definitely know that people are cheerier when, for example, Santa's coming to town, but is it to the point where it could influence a vote they would cast at this time of year? Or do people that cast their votes around this period of the year that you usually spend with your loved ones, far away from your screen, tend to somewhat adopt the mind set of the Grinch?  
 Let's take a look. Its is important for further analysis to firstly observe how the number of elections evolved over time, when grouped by year.
 
+{% include proportion_geo_famous.html %}
+
 *How did the number of elections vary over time ?*
 To play around with the time length, click on the tiny lines in the legend!
 
