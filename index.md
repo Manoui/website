@@ -24,6 +24,15 @@ Graph interactif+ résultats intéressants, plus en mode rapport
 
 
 
+Analyzing the fame of a quote is of high interest for example for politicians or brands. Indeed, they are seeking to generate a quote that sticks in your head. But what makes the fame of a quote ? Does it depend on the speaker, on the content, on the length of a quote ?
+Here down you can select some parameters and see their distribution across famous and 'non-famous' quotes. Which features do you predict can differentiate famous from non-famous quotes ?
+
+Now let see if you were right :)
+
+
+
+
+
 {% include famous_speakers.html %}
 
 
