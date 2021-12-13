@@ -69,6 +69,10 @@ Using logistic regression as supervised learning to try to classify whether a qu
 
 {% include logistic_regression_coefficients.html %}
 
+Using random forest as supervised learning to try to classify whether a quote will be famous or not, the coefficient contributing the most are displayed here below.
+
+{% include rf_coefficients.html %}
+
 **Have fun and play with the plot! It supports the interpretations we made previously!**
 Feel free to investigate the graphs by activating the traces for averaging over different time ranges and/or by zooming in! The number of elections or votes is visualized by the diameter of the bubbles.
 
