@@ -2,9 +2,13 @@ What can we learn from Wikipedia adminship elections ?
 How social network structure potentially influences voting in a time-dependent manner: analysis of a signed social network. 
 
 {% include famous_speakers.html %}
+
 {% include famous_speakers_timeseries.html %}
+
 {% include logistic_regression_coefficients.html %}
+
 {% include word_occurrences.html %}
+
 {% include word_stopwordss.html %}
 
 
