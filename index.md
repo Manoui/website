@@ -3,13 +3,6 @@ How social network structure potentially influences voting in a time-dependent m
 
 {% include famous_speakers.html %}
 
-{% include famous_speakers_timeseries.html %}
-
-{% include logistic_regression_coefficients.html %}
-
-{% include word_occurrence.html %}
-
-{% include word_occurrence_stopwordss.html %}
 
 
 
@@ -18,6 +11,8 @@ From seeking to be the class representative of your 5th grade class, to announci
 We do not yet have the magic trick that will ensure you to get elected next time you run, but we are working hard on it. And for that, we chose to analyse past elections, exactly like football players review past games to improve their strategy. 
 To this end, we chose to look back on Wikipedia Adminship elections that happened between 2004 and 2008. 
 For some context : Wikipedia is the free online encyclopedia that we all know and love. Its articles are written by volunteers, amongst whom we can distinguish administrators. In addition of being able to write articles, those people also have access to technical features of the website, they are especially given the ability to help with its maintenance. But not anyone can become an admin that easily ! Adminship seekers have to go through a public election process which determines whether or not they are promoted. If you are more curious, a list of all admins can be found [here](https://en.wikipedia.org/wiki/Special:ListUsers?username=&group=sysop&wpsubmit=&wpFormIdentifier=mw-listusers-form&limit=50)
+
+{% include word_occurrence.html %}
 
 Before getting started, we also wanted to introduce the [Wikipedia bureaucrats](https://en.wikipedia.org/wiki/Category:Wikipedia_bureaucrats). Indeed, these bureaucrats are amongst others the ones deciding on when an election will be closed and on the outcome of the latter. Do they accord the same duration to every election and do they declare success of election if at least half of the casted votes is positive? Be patient, you'll discover! 
 
