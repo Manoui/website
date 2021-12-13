@@ -17,6 +17,8 @@ For some context : Wikipedia is the free online encyclopedia that we all know an
 Before getting started, we also wanted to introduce the [Wikipedia bureaucrats](https://en.wikipedia.org/wiki/Category:Wikipedia_bureaucrats). Indeed, these bureaucrats are amongst others the ones deciding on when an election will be closed and on the outcome of the latter. Do they accord the same duration to every election and do they declare success of election if at least half of the casted votes is positive? Be patient, you'll discover! 
 
 
+{% include proportion_features_famous_nonfamous.html %}
+
 **We do not want to make you wait any longer, so tell us what you got Wikipedia!**
 
 ### TEMPORAL ANALYSIS 
