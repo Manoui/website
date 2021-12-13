@@ -1,9 +1,10 @@
 
 
 “Shoot for the moon. Even if you miss, you'll land among the stars.” Norman Vincent Peale
-Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to be famous? Then this website might help you!
-First, try to write something, we’ll tell you if your words will become famous:
+Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to be famous? Then this website might help you! First, try to write something, we’ll tell you if your words will become famous:
+
 -WIDGET (predict if sentence famous or not)-
+
 (train a model only on quote features so the user doesn’t have to enter any info or ask for nationality, gender etc?)
 
 Display a sentence based on the result:
@@ -12,6 +13,7 @@ peut être marrant de mettre des phrases hyper cassantes comme sur How Bad Is Yo
 -If ‘famous’: Wow impressive you’re definitely going somewhere with that spirit!
 
 Anyway you better try our famous quote generator if you want to succeed, enter the first words of your sentence and the length of words and here we go:
+
 -WIDGET (quote generator)-
 
 Inspiring no? Post it right away on twitter or instagram and let the magic happen
@@ -28,11 +30,16 @@ Analyzing the fame of a quote is of high interest for example for politicians or
 
 ### Data Overview
 
-First of all let see what speakers emitted the most famous quotes during the years 2015-2020, and unsurprisingly we see Donald Trump in the first place ! He is even indirectly mentionned in the most famous quote of Pope Francis "A person who thinks only about building walls ...". It is very interesting to see that most famous quotes are related to politicians over the world, as they are highly mediatized and all their words are reported and analyzed in newspapers. 
+First of all let see which speakers emitted the most famous quotes during the years 2015-2020. Unsurprisingly we see Donald Trump in the first place ! He is even indirectly mentionned in the most famous quote of Pope Francis “A person who thinks only about building walls …”. It is also very interesting to see that politicians emitted the largest number of famous quotes, as they are highly mediatized and all their words are reported and analyzed in newspapers.
 
 {% include famous_speakers.html %}
 
-The graph below shows the number of famous quotes emitted by the top 20 of the previous speakers over time. 
+The graph below shows the number of famous quotes emitted over time (2015-2020) by the top 20 of the previous speakers. It is very interesting to see the different peaks and how they relate to highly mediatized events in English newspapers. 
+* The peak in September 2016 of Donald Trump is during its presidential compaign were he “unleashes a blizzard of falsehoods, exaggerations and outright lies in the general election, peppering his speeches, interviews and Twitter posts with untruths so frequent that they can seem flighty or random — even compulsive.” 
+* The peak of quotations in June 2017 of James Comey, former FBI director, coincides with its testimony after being fired by Donald Trump, and with Jeff Sessions peak, who originally recommended Trump about this firing. 
+* The Pope Francis visits Washington and New York City on the 24th of September 2015 “Thank you very much -- and God bless America!”
+* The peak in April 2018 of Emmanuel Macron correspond to its speech to the Congress of the United States of America. 
+
 
 {% include famous_speakers_timeseries.html %}
 
