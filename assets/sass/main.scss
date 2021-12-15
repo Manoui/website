@@ -646,7 +646,7 @@
 		}
 
 		&.special {
-			text-align: center;
+			text-align: left;
 		}
 
 		.image {
@@ -923,7 +923,7 @@
 					@include vendor('flex-grow', '1');
 					@include vendor('flex-shrink', '1');
 					padding: (_size(element-margin) * 0.5) 0 0 0;
-					text-align: center;
+					text-align: left;
 					width: 100%;
 
 					> * {
@@ -1046,7 +1046,7 @@
 		height: _size(element-height);
 		line-height: _size(element-height);
 		padding: 0 2em;
-		text-align: center;
+		text-align: left;
 		text-decoration: none;
 		white-space: nowrap;
 
@@ -1378,7 +1378,7 @@
 		background-size:		auto,							cover;
 		color: #fff;
 		padding: 12em 0 20em 0;
-		text-align: center;
+		text-align: left;
 
 		:last-child {
 			margin-bottom: 0;
@@ -1430,7 +1430,7 @@
 		padding: 4em 0;
 
 		> header {
-			text-align: center;
+			text-align: left;
 			margin: 0 0 3em 0;
 
 			h2 {
@@ -1460,7 +1460,7 @@
 	#footer {
 		background: #f0f0f0;
 		padding: 4em 0 6em 0;
-		text-align: center;
+		text-align: left;
 
 		.icons {
 			a {
@@ -1479,7 +1479,7 @@
 			line-height: 1em;
 			margin: 2em 0 0 0;
 			padding: 0;
-			text-align: center;
+			text-align: left;
 
 			a {
 				color: inherit;
@@ -1507,7 +1507,7 @@
 		background: _palette(accent2, bg);
 		color: _palette(accent2, fg);
 		padding: 3.5em 0 4em 0;
-		text-align: center;
+		text-align: left;
 
 		h2, h3, h4, h5, h6 {
 			color: inherit;
@@ -1747,7 +1747,7 @@
 						left: 0.5em;
 						line-height: 2.25em;
 						position: absolute;
-						text-align: center;
+						text-align: left;
 						top: 0.5em;
 						width: 3.5em;
 					}
@@ -1993,7 +1993,7 @@
 					li {
 						display: block;
 						padding: (_size(element-margin) * 0.5) 0 0 0;
-						text-align: center;
+						text-align: left;
 						width: 100%;
 
 						&:first-child {
