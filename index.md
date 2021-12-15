@@ -27,9 +27,8 @@ Un truc qui génère des images de ce type ça pourrait être marrant, avec un t
 
 
 <p float="left">
-  <img src="images/people_slogan.png" width="300" height="300">
-  <img src="images/brand_slogan.png" width="300" height="300"> 
-  <img src="images/Photo_CV.png" width="300" height="300"> 
+  <img src="images/people_slogan.png" width="400" height="400">
+  <img src="images/brand_slogan.png" width="800" height="800"> 
 </p>
 
 
@@ -38,56 +37,61 @@ I would bet these slogan ring a bell to you! Those quotes emitted by famous pers
 "A brand is a voice and a product is a souvenir."- Lisa Gansky
 Consumers use products, but the brand is what speaks to them. One recent exemple is Dacia with its "Everybody drives a duster.", that advertisement for sure caught your attention, perhaps you even sang, as compared to other car advertisements that were left unoticed. 
 
-A precident has also a slogan during its compaign, and it should be short, appealing and stick in your head. It is of high interest to generate a famous that will be cited multiple times.
+Mediatized people often want to make the buzz, in order to create their own brand and remain famous. A precident has also a slogan during its compaign, and it should be short, appealing and stick in your head. It is of high interest to generate a famous that will be cited multiple times.
 
 So what makes the fame of a quote ? Does it depend on the speaker, on the content, or on the length of a quote ?
 
+### What are the trends ?
 
-## What are the trends ?
-
-First of all let see which speakers emitted the most famous quotes during the years 2015-2020. 
-
-{% include famous_speakers_timeseries.html %}
-
-Unsurprisingly we see Donald Trump in the first place ! He is even indirectly mentionned in the most famous quote of Pope Francis “A person who thinks only about building walls …”. It is also very interesting to see that politicians emitted the largest number of famous quotes, as they are highly mediatized and all their words are reported and analyzed in newspapers.
+First of all let see which famous speakers (based on the [Pantheon database](Yu, A. Z., et al. (2016). Pantheon 1.0, a manually verified dataset of globally famous biographies. Scientific Data 2:150075. doi: 10.1038/sdata.2015.75)) emitted the most famous quotes during the years 2015-2020. 
 
 {% include famous_speakers.html %}
 
-The graph below shows the number of famous quotes emitted over time (2015-2020) by the top 20 of the previous speakers. It is very interesting to see the different peaks and how they relate to highly mediatized events in English newspapers. 
+Unsurprisingly we see Donald Trump in the first place ! He is even indirectly mentionned in the most famous quote of Pope Francis “A person who thinks only about building walls …”. It is also very interesting to see that politicians emitted the largest number of famous quotes, as they are highly mediatized and all their words are reported and analyzed in newspapers.
+
+Let's look now at the dynamics over time. The figure below shows the number of famous quotes emitted over time (2015-2020) by the top 20 of the previous speakers. You can slide your cursor over the peaks to see the quote with the most citations at a specific date, you can zoom in, and also deselect some speakers.
+
+{% include famous_speakers_timeseries.html %}
+
+It is very interesting to see the different peaks and how they relate to highly mediatized events in English newspapers. 
 * The peak in September 2016 of Donald Trump is during its presidential compaign were he “unleashes a blizzard of falsehoods, exaggerations and outright lies in the general election, peppering his speeches, interviews and Twitter posts with untruths so frequent that they can seem flighty or random — even compulsive.” 
 * The peak of quotations in June 2017 of James Comey, former FBI director, coincides with its testimony after being fired by Donald Trump, and with Jeff Sessions peak, who originally recommended Trump about this firing. 
-* The Pope Francis visits Washington and New York City on the 24th of September 2015 “Thank you very much -- and God bless America!”
+* Pope Francis visits Washington and New York City on the 24th of September 2015, which explains the quotations in newspapers, and on February 2016 he pronounces a powerful sentence about the American President “A person who thinks only about building walls -- wherever they may be -- and not building bridges, is not Christian ... ”
 * The peak in April 2018 of Emmanuel Macron correspond to its speech to the Congress of the United States of America. 
 
-
-
-Let us now look at the proportion of famous quotes and non-famous quotes around the globe, as well as their co-occurrence with other features from the speakers emitting the quote.
-{% include famous_quotes_ts.html %}
+You may already have realized that most of the quotations we collected from Quotebank are largely related to events mediatized in American newspapers. Here, below you can observe the proportion of famous quotes and non-famous quotes according to the speakers origin.
 
 {% include proportion_geo_famous.html %}
 
-##### Topics
-Over time:
-{% include topic_timeseries.html %}
 
-Distribution: 
-<img src="images/topics_quotes.jpeg" width="300" height="300"> 
-
-Some examples:
-<img src="images/example_topics.jpeg" width="300" height="300"> 
-
-### Data distribution
-
-Now it is your turn to take guesses on what makes the fame of a quote by selecting some parameters and see their distribution across famous and ‘non-famous’ quotes. Which features do you predict can differentiate famous from non-famous quotes ?
+### The bets are open
+                                                             
+Now it is your turn to take guesses on what makes the fame of a quote by selecting some parameters and see their distribution across famous and ‘non-famous’ quotes. Which individual features do you predict can differentiate famous from non-famous quotes ?
 
 {% include proportion_features_famous_nonfamous.html %}
 
-Combining features
+Also, consider combining some features. What do you observe ?
+
 {% include gender_occupation.html %}
 
+Perahps you are wondering, what are the quotes about ? You may have already guessed that most famous quotations over time are related to politics, but justice also appears frequently, a bit less lkely are arts and environment. 
 
-## Data results
+{% include topic_timeseries.html %}
 
+Would you expecte a difference in topics between famous and non-famous quotes ? If yes which topics would be more or less prominent ?
+
+<img src="images/topics_quotes.jpeg" width="600" height="300"> 
+
+Both types of quotes have a high percentage of quotes related to justice. Sports represents 21% of non-famous quotes, whereas it only makes up for 4.73% of famous quotes seems. Politics is in contrast twice much more present in famous quotes compared to non-famous.
+
+It is also interesting the distribution of topics among famous speakers.
+
+<img src="images/example_topics.jpeg" width="600" height="300"> 
+
+
+### Predict fame
+
+Here below you can find most famous quotes
 {% include famous_combinations.html %}
 
 Combining features
