@@ -69,9 +69,9 @@ exemple of sentences:
 -”She weren’t my daughter it would be so much easier for her to.”
 
 <p float="left">
-  <img src="/images/people_slogan.png" width="300" height="300" />
-  <img src="/images/brand_slogan.png" width="300" height="300" /> 
-  <img src="/images/Photo_CV.png" width="300" height="300" /> 
+  <img src="images/people_slogan.png" width="300" height="300" />
+  <img src="images/brand_slogan.png" width="300" height="300" /> 
+  <img src="images/Photo_CV.png" width="300" height="300" /> 
 </p>
 
 
@@ -110,10 +110,10 @@ Over time:
 {% include topic_timeseries.html %}
 
 Distribution: 
-<img src="/images/topics_quotes.jpeg" width="300" height="300" /> 
+<img src="images/topics_quotes.jpeg" width="300" height="300" /> 
 
 Some examples:
-<img src="/images/example_topics.jpeg" width="300" height="300" /> 
+<img src="images/example_topics.jpeg" width="300" height="300" /> 
 
 ### Data distribution
 
