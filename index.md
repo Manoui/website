@@ -27,8 +27,8 @@ Un truc qui génère des images de ce type ça pourrait être marrant, avec un t
 
 
 <p float="left">
-  <img src="images/people_slogan.png" width="250" height="250">
-  <img src="images/brand_slogan.png" width="400" height="400"> 
+  <img src="images/people_slogan.png" width="300" height="300">
+  <img src="images/brand_slogan.png" width="300" height="300"> 
 </p>
 
 
