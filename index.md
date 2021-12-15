@@ -70,16 +70,12 @@ exemple of sentences:
 
 <p float="left">
   <img src="/images/people_slogan.png" width="100" />
-  <img src="/images/brand_slogan.pn" width="100" /> 
+  <img src="/images/brand_slogan.png" width="100" /> 
 </p>
 
 
 
 ### Data Overview
-
-People's slogan           |  Brands' slogan
-:-------------------------:|:-------------------------:
-![](/images/people_slogan.png){width=10%}  |  ![](/images/brand_slogan.png){width=10%}
 
 A brand is a voice and a product is a souvenir. - Lisa Gansky
 Nike – “Just Do it”
