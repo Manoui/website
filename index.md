@@ -79,7 +79,7 @@ exemple of sentences:
 
 People's slogan           |  Brands' slogan
 :-------------------------:|:-------------------------:
-![](/images/people_slogan.png)  |  ![](/images/brand_slogan.png)
+![](/images/people_slogan.png){width=25%}  |  ![](/images/brand_slogan.png){width=25%}
 
 A brand is a voice and a product is a souvenir. - Lisa Gansky
 Nike – “Just Do it”
