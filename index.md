@@ -24,7 +24,6 @@ Un truc qui génère des images de ce type ça pourrait être marrant, avec un t
 While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous:
 Graph interactif+ résultats intéressants, plus en mode rapport
 
-
 Grammatical features:
 Model makes a prediction of which tag is the most likely regarding the context. We generated some features that count the occurrences of a grammatical class in each sentence.
 The grammatical features were generated using the universal POS tag thanks to SpaCy library. They count the number of adjectives, nouns, verbs etc in a sentence. 
@@ -88,6 +87,11 @@ Let us now look at the proportion of famous quotes and non-famous quotes around 
 
 {% include proportion_geo_famous.html %}
 
+##### Topics
+![topics](topics_quotes.jpeg)
+
+Some examples:
+![Example_topics](example_topics.jpeg)
 
 ### Data distribution
 
