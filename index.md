@@ -68,6 +68,10 @@ exemple of sentences:
 -”Assad regime and has been times of national tragedy took pill in ibiza.”
 -”She weren’t my daughter it would be so much easier for her to.”
 
+<p float="left">
+  <img src="/images/people_slogan.png" width="100" />
+  <img src="/images/brand_slogan.pn" width="100" /> 
+</p>
 
 
 
