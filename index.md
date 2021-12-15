@@ -71,6 +71,7 @@ exemple of sentences:
 <p float="left">
   <img src="/images/people_slogan.png" width="200" />
   <img src="/images/brand_slogan.png" width="250" /> 
+  <img src="/images/Photo_CV.png" width="250" /> 
 </p>
 
 
