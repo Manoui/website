@@ -27,8 +27,8 @@ Un truc qui génère des images de ce type ça pourrait être marrant, avec un t
 
 
 <p float="left">
-  <img src="images/people_slogan.png" width="300" height="300">
-  <img src="images/brand_slogan.png" width="500" height="500"> 
+  <img src="images/people_slogan.png" width="250" height="250">
+  <img src="images/brand_slogan.png" width="400" height="400"> 
 </p>
 
 
@@ -89,52 +89,33 @@ It is also interesting the distribution of topics among famous speakers.
 
 <img src="images/example_topics.jpeg" width="600" height="300"> 
 
+Du coup à enlever ?
+{% include nationality_occupation_complexity.html %}
 
 ### Predict fame
 
-You may have already developed an intuition that most famous quotes are emitted by politicians in the Unites States
+You may have already developed an intuition that most famous quotes are emitted by politicians in North America, covering mostly politics or justice. 
 
 {% include famous_combinations.html %}
 
-Combining features
-{% include nationality_occupation_complexity.html %}
+Would you want to consider to some additional parameters to predict the fame of a quote? 
 
-### The importance of words
-Did you think about the importance of words ? What words would you expect to see based on previous observations ? 
-Now let see if you were right :)
+**Did you think about the importance of words ? What words would you expect to see based on previous observations ?**
 
 {% include word_occurrence_stopwords.html %}
 
 In the plot below you can slide over the plot with your cursor to see the most used words in famous versus non-famous quotes. There are a lot of similarities in the highly frequent words, such as the use of ‘people’, ‘going’, ‘think’, etc. But some frequent words are specific to the famous quotes: ‘us’, ‘president’, ‘country’, etc. as compared to ‘like’, ‘really’, ’time’ in non-famous quotes.
 These relates to what you previously observed, in the majority of famous quotes are neutral, as comapred to most positive quotes in non-famous ones. Moreover, you saw the high proportion of politician speakers in both the famous and non-famous dataset, which also explains the occurence of some specific words.
 
+**Let see if your intuition is correct, and whether supervised learning methods agree with you ;)**
 
-Using logistic regression as supervised learning to try to classify whether a quote will be famous or not, the coefficient contributing the most are displayed here below.
+Using logistic regression and random forest as supervised learning classifiers, we were able to predict the fame of new quotes with an accuracy of 0.74 %. Here below, you can see which coefficients and the associated feature contributing the most to the prediction.
 
 {% include logistic_regression_coefficients.html %}
 
-Using random forest as supervised learning to try to classify whether a quote will be famous or not, the coefficient contributing the most are displayed here below.
-
 {% include rf_coefficients.html %}
 
-**Have fun and play with the plot! It supports the interpretations we made previously!**
-Feel free to investigate the graphs by activating the traces for averaging over different time ranges and/or by zooming in! The number of elections or votes is visualized by the diameter of the bubbles.
+**Conclusion: the topic of a quote is of high importance, even more than the speakers features or the characteristics of the sentence. Indeed, "Content is more than "subject matter. ' It is all the feelings and ideas you bring to your painting." - Rene Huyghe. The choice of words and the speaker are less important than the information it conveys. **
 
-
-***About the elections* (second plot):***
-What about the *large green bubble* ? It accounts for the near-thousand elections was were closed in the month of May 2007 -- encompassing two of our election-closure pics!
-
-
-
-**Conclusion: Give people time to know you, to hear your opinions, and discuss about your program, increasing your election duration might increase your chances of winning!**
-
-
-
-#### **Can we observe social network theories? 
-#### Or
-#### Are people influenced by other people's votes and can tendencies be reversed ?**
-
-
-That does look somewhat confusing to you maybe but no worries, we put the message behind this graph into numbers for you. Long story short, there is a **20%** chance that the election outcome might still switch around until the end of the election. So don't just start your celebration yet, no one likes people that claim victory before they've actually won ([we have no one specific in mind of course](https://www.youtube.com/watch?v=W9d6j2uO6MI)). Concerning your bottle of champagne however, keep it within reach, [in case of victory you'll deserve it, in case of defeat you'll need it](https://vinepair.com/articles/fake-drinking-quotes/).
 
 
