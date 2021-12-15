@@ -1,72 +1,30 @@
 
 
-“Shoot for the moon. Even if you miss, you'll land among the stars.” Norman Vincent Peale
+> “Shoot for the moon. Even if you miss, you'll land among the stars.” Norman Vincent Peale
+
 Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to be famous? Then this website might help you! First, try to write something, we’ll tell you if your words will become famous:
 
-{%  include templates/index_1512_2.html  %}
--WIDGET (predict if sentence famous or not)-
+**WIDGET (predict if sentence famous or not)**
 
+{%  include templates/index_1512_2.html  %}
 (train a model only on quote features so the user doesn’t have to enter any info or ask for nationality, gender etc?)
 
 Display a sentence based on the result:
--If ‘not famous’: Ouch too bad, did you really mean to say that? It sucks maybe, try our famous quote generator 
+* If ‘not famous’: Ouch too bad, did you really mean to say that? It sucks maybe, try our famous quote generator 
 peut être marrant de mettre des phrases hyper cassantes comme sur How Bad Is Your Streaming Music? (pudding.cool)
--If ‘famous’: Wow impressive you’re definitely going somewhere with that spirit!
+* If ‘famous’: Wow impressive you’re definitely going somewhere with that spirit!
 
 Anyway you better try our famous quote generator if you want to succeed, enter the first words of your sentence and the length of words and here we go:
 
--WIDGET (quote generator)-
+** WIDGET (quote generator)**
 
 Inspiring no? Post it right away on twitter or instagram and let the magic happen
 -WIDGET (put the quote on a ‘inspirational quote background’)-
 Un truc qui génère des images de ce type ça pourrait être marrant, avec un truc pour les poster direct sur insta ou fb haha
 
  
-While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous:
-Graph interactif+ résultats intéressants, plus en mode rapport
+** While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous. **
 
-Grammatical features:
-Model makes a prediction of which tag is the most likely regarding the context. We generated some features that count the occurrences of a grammatical class in each sentence.
-The grammatical features were generated using the universal POS tag thanks to SpaCy library. They count the number of adjectives, nouns, verbs etc in a sentence. 
-Apparently there is no clear difference between the grammatical content/syntax of famous and mon-famous sentences. They are not considered as important features by the supervised learning models. We better try to look somewhere else...
-Universal POS tags (universaldependencies.org)
-Entity recognition:
-We used Named Entity Recognition (NER) to extract entity information about quotes. Do they refer to a place? A person? Or an event? NER is a useful tool to extract meaningful information from sentences.  If multiple entities are present in one sentence, we chose the class with the most occurrences within that sentence in order to attribute only one main entity to a quote (i.e. if a quote is about a person, a place etc)
-It appears that quotes about Work of Art 
-PERSON People, including fictional.
-NORP Nationalities or religious or political groups.
-FAC Buildings, airports, highways, bridges, etc.
-ORG Companies, agencies, institutions, etc.
-GPE Countries, cities, states.
-LOC Non-GPE locations, mountain ranges, bodies of water.
-PRODUCT Objects, vehicles, foods, etc. (Not services.)
-EVENT Named hurricanes, battles, wars, sports events, etc.
-WORK_OF_ART Titles of books, songs, etc.
-LAW Named documents made into laws.
-LANGUAGE Any named language.
-DATE Absolute or relative dates or periods.
-TIME Times smaller than a day.
-PERCENT Percentage, including "%".
-MONEY Monetary values, including unit.
-QUANTITY Measurements, as of weight or distance.
-ORDINAL "first", "second", etc.
-CARDINAL Numerals that do not fall under another type.
-
-{% include famous_quotes_ts.html %}
-
-## Famous quote generator:
-
-We selected a corpus of the 1000 most famous quotes across years, ranging from 98263 to 1028 occurrences. The text was preprocessed in order to remove punctuation and numbers as well as multiple spacing. An LSTM model was created and trained on 100 epoch using this corpus. The output of the model is the probability of the next word in the sequence. Once the model was trained, we generated new sentences using a random seed of 4 words and limiting its length to 13 words since it is the median length of famous quotes. 
-
-exemple of sentences:
--”Ensure the safety and democracy in the face of enemies of freedom europe.”
--”And that was big she was crying when she saw me for republicans.”
--”These murderous attacks have once again showed us the total hatred of humanity.”
--”Values will be enhanced when women are granted their rights the meyerowitz stories.”
--”Relax there should be been an evacuation divinity original sin sin sin sin.”
--”Are united beyond all borders in horror and sorrow but also in determination.”
--”Assad regime and has been times of national tragedy took pill in ibiza.”
--”She weren’t my daughter it would be so much easier for her to.”
 
 <p float="left">
   <img src="images/people_slogan.png" width="300" height="300">
@@ -75,21 +33,23 @@ exemple of sentences:
 </p>
 
 
+I would bet these slogan ring a bell to you! Those quotes emitted by famous personnalities remain in your mind and are cited over again, but why ? Whats makes the fame of those quotes. This is the million dollar question. 
 
-### Data Overview
+"A brand is a voice and a product is a souvenir."- Lisa Gansky
+Consumers use products, but the brand is what speaks to them. One recent exemple is Dacia with its "Everybody drives a duster.", that advertisement for sure caught your attention, perhaps you even sang, as compared to other car advertisements that were left unoticed. 
 
-A brand is a voice and a product is a souvenir. - Lisa Gansky
-Nike – “Just Do it”
-Red Bull — “Red Bull Gives You Wings”
-Make America Great Again - Donald Trump
-Yes we can. - Barack Obama
+A precident has also a slogan during its compaign, and it should be short, appealing and stick in your head. It is of high interest to generate a famous that will be cited multiple times.
 
-Ebaqdesign.com. 2021. Top Brand Slogans & How to Create One. [online] Available at: <https://www.ebaqdesign.com/blog/brand-slogans> [Accessed 15 December 2021].
+So what makes the fame of a quote ? Does it depend on the speaker, on the content, or on the length of a quote ?
 
 
-Analyzing the fame of a quote is of high interest for example for politicians or brands. Indeed, they are seeking to generate a quote that sticks in your head. But what makes the fame of a quote ? Does it depend on the speaker, on the content, or on the length of a quote ?
+## What are the trends ?
 
-First of all let see which speakers emitted the most famous quotes during the years 2015-2020. Unsurprisingly we see Donald Trump in the first place ! He is even indirectly mentionned in the most famous quote of Pope Francis “A person who thinks only about building walls …”. It is also very interesting to see that politicians emitted the largest number of famous quotes, as they are highly mediatized and all their words are reported and analyzed in newspapers.
+First of all let see which speakers emitted the most famous quotes during the years 2015-2020. 
+
+{% include famous_speakers_timeseries.html %}
+
+Unsurprisingly we see Donald Trump in the first place ! He is even indirectly mentionned in the most famous quote of Pope Francis “A person who thinks only about building walls …”. It is also very interesting to see that politicians emitted the largest number of famous quotes, as they are highly mediatized and all their words are reported and analyzed in newspapers.
 
 {% include famous_speakers.html %}
 
@@ -99,9 +59,10 @@ The graph below shows the number of famous quotes emitted over time (2015-2020) 
 * The Pope Francis visits Washington and New York City on the 24th of September 2015 “Thank you very much -- and God bless America!”
 * The peak in April 2018 of Emmanuel Macron correspond to its speech to the Congress of the United States of America. 
 
-{% include famous_speakers_timeseries.html %}
+
 
 Let us now look at the proportion of famous quotes and non-famous quotes around the globe, as well as their co-occurrence with other features from the speakers emitting the quote.
+{% include famous_quotes_ts.html %}
 
 {% include proportion_geo_famous.html %}
 
