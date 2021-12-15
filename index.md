@@ -88,6 +88,10 @@ Let us now look at the proportion of famous quotes and non-famous quotes around 
 {% include proportion_geo_famous.html %}
 
 ##### Topics
+Over time:
+{% include topic_timeseries.html %}
+
+Distribution: 
 ![topics](topics_quotes.jpeg)
 
 Some examples:
