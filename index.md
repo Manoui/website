@@ -27,8 +27,8 @@ Un truc qui génère des images de ce type ça pourrait être marrant, avec un t
 
 
 <p float="left">
-  <img src="images/people_slogan.png" width="400" height="400">
-  <img src="images/brand_slogan.png" width="800" height="800"> 
+  <img src="images/people_slogan.png" width="300" height="300">
+  <img src="images/brand_slogan.png" width="500" height="500"> 
 </p>
 
 
@@ -39,7 +39,8 @@ Consumers use products, but the brand is what speaks to them. One recent exemple
 
 Mediatized people often want to make the buzz, in order to create their own brand and remain famous. A precident has also a slogan during its compaign, and it should be short, appealing and stick in your head. It is of high interest to generate a famous that will be cited multiple times.
 
-So what makes the fame of a quote ? Does it depend on the speaker, on the content, or on the length of a quote ?
+So what makes the fame of a quote ? Does it depend on the speaker, on the content, or on the length of a quote ? Through this website, you will fit the shoes of a data analysis to discover what parameters define the fame of a quote.
+
 
 ### What are the trends ?
 
@@ -91,7 +92,8 @@ It is also interesting the distribution of topics among famous speakers.
 
 ### Predict fame
 
-Here below you can find most famous quotes
+You may have already developed an intuition that most famous quotes are emitted by politicians in the Unites States
+
 {% include famous_combinations.html %}
 
 Combining features
