@@ -51,7 +51,10 @@ MONEY Monetary values, including unit.
 QUANTITY Measurements, as of weight or distance.
 ORDINAL "first", "second", etc.
 CARDINAL Numerals that do not fall under another type.
-Famous quote generator:
+
+{% include famous_quotes_ts.html %}
+
+## Famous quote generator:
 
 We selected a corpus of the 1000 most famous quotes across years, ranging from 98263 to 1028 occurrences. The text was preprocessed in order to remove punctuation and numbers as well as multiple spacing. An LSTM model was created and trained on 100 epoch using this corpus. The output of the model is the probability of the next word in the sequence. Once the model was trained, we generated new sentences using a random seed of 4 words and limiting its length to 13 words since it is the median length of famous quotes. 
 
@@ -92,7 +95,16 @@ Now it is your turn to take guesses on what makes the fame of a quote by selecti
 
 {% include proportion_features_famous_nonfamous.html %}
 
+Combining features
+{% include gender_occupation.html %}
+
+
 ## Data results
+
+{% include famous_combinations.html %}
+
+Combining features
+{% include nationality_occupation_complexity.html %}
 
 ### The importance of words
 Did you think about the importance of words ? What words would you expect to see based on previous observations ? 
