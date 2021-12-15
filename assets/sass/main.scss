@@ -262,7 +262,7 @@
 	}
 
 	.align-center {
-		text-align: center;
+		text-align: left;
 	}
 
 	.align-right {
@@ -343,7 +343,7 @@
 
 	section, article {
 		&.special {
-			text-align: center;
+			text-align: left;
 		}
 	}
 
@@ -377,7 +377,7 @@
 
 		&.major {
 			padding: 1em 0;
-			text-align: center;
+			text-align: left;
 
 			h2 {
 				margin: 0;
@@ -505,7 +505,7 @@
 				left: 0;
 				line-height: (_size(element-height) * 0.75);
 				position: absolute;
-				text-align: center;
+				text-align: left;
 				top: 0;
 				width: (_size(element-height) * 0.75);
 			}
