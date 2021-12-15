@@ -255,7 +255,7 @@ le@import url("fontawesome-all.min.css");
 	}
 
 	.align-center {
-		text-align: center;
+		text-align: left;
 	}
 
 	.align-right {
@@ -284,7 +284,7 @@ le@import url("fontawesome-all.min.css");
 		}
 
 		.row.aln-center {
-			justify-content: center;
+			justify-content: left;
 		}
 
 		.row.aln-right {
@@ -296,7 +296,7 @@ le@import url("fontawesome-all.min.css");
 		}
 
 		.row.aln-middle {
-			align-items: center;
+			align-items: left;
 		}
 
 		.row.aln-bottom {
@@ -526,8 +526,8 @@ le@import url("fontawesome-all.min.css");
 					justify-content: flex-start;
 				}
 
-				.row.aln-center {
-					justify-content: center;
+				.row.aln-left {
+					justify-content: left;
 				}
 
 				.row.aln-right {
