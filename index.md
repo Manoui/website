@@ -25,6 +25,47 @@ While you are waiting for the fame to come thanks to your quote, you can explore
 Graph interactif+ résultats intéressants, plus en mode rapport
 
 
+Grammatical features:
+Model makes a prediction of which tag is the most likely regarding the context. We generated some features that count the occurrences of a grammatical class in each sentence.
+The grammatical features were generated using the universal POS tag thanks to SpaCy library. They count the number of adjectives, nouns, verbs etc in a sentence. 
+Apparently there is no clear difference between the grammatical content/syntax of famous and mon-famous sentences. They are not considered as important features by the supervised learning models. We better try to look somewhere else...
+Universal POS tags (universaldependencies.org)
+Entity recognition:
+We used Named Entity Recognition (NER) to extract entity information about quotes. Do they refer to a place? A person? Or an event? NER is a useful tool to extract meaningful information from sentences.  If multiple entities are present in one sentence, we chose the class with the most occurrences within that sentence in order to attribute only one main entity to a quote (i.e. if a quote is about a person, a place etc)
+It appears that quotes about Work of Art 
+PERSON People, including fictional.
+NORP Nationalities or religious or political groups.
+FAC Buildings, airports, highways, bridges, etc.
+ORG Companies, agencies, institutions, etc.
+GPE Countries, cities, states.
+LOC Non-GPE locations, mountain ranges, bodies of water.
+PRODUCT Objects, vehicles, foods, etc. (Not services.)
+EVENT Named hurricanes, battles, wars, sports events, etc.
+WORK_OF_ART Titles of books, songs, etc.
+LAW Named documents made into laws.
+LANGUAGE Any named language.
+DATE Absolute or relative dates or periods.
+TIME Times smaller than a day.
+PERCENT Percentage, including "%".
+MONEY Monetary values, including unit.
+QUANTITY Measurements, as of weight or distance.
+ORDINAL "first", "second", etc.
+CARDINAL Numerals that do not fall under another type.
+Famous quote generator:
+
+We selected a corpus of the 1000 most famous quotes across years, ranging from 98263 to 1028 occurrences. The text was preprocessed in order to remove punctuation and numbers as well as multiple spacing. An LSTM model was created and trained on 100 epoch using this corpus. The output of the model is the probability of the next word in the sequence. Once the model was trained, we generated new sentences using a random seed of 4 words and limiting its length to 13 words since it is the median length of famous quotes. 
+
+exemple of sentences:
+-”Ensure the safety and democracy in the face of enemies of freedom europe.”
+-”And that was big she was crying when she saw me for republicans.”
+-”These murderous attacks have once again showed us the total hatred of humanity.”
+-”Values will be enhanced when women are granted their rights the meyerowitz stories.”
+-”Relax there should be been an evacuation divinity original sin sin sin sin.”
+-”Are united beyond all borders in horror and sorrow but also in determination.”
+-”Assad regime and has been times of national tragedy took pill in ibiza.”
+-”She weren’t my daughter it would be so much easier for her to.”
+
+
 ### Data Overview
 Analyzing the fame of a quote is of high interest for example for politicians or brands. Indeed, they are seeking to generate a quote that sticks in your head. But what makes the fame of a quote ? Does it depend on the speaker, on the content, or on the length of a quote ?
 
