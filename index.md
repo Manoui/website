@@ -68,7 +68,18 @@ exemple of sentences:
 -”She weren’t my daughter it would be so much easier for her to.”
 
 
+
+
 ### Data Overview
+A brand is a voice and a product is a souvenir. - Lisa Gansky
+Nike – “Just Do it”
+Red Bull — “Red Bull Gives You Wings”
+Make America Great Again - Donald Trump
+Yes we can. - Barack Obama
+
+Ebaqdesign.com. 2021. Top Brand Slogans & How to Create One. [online] Available at: <https://www.ebaqdesign.com/blog/brand-slogans> [Accessed 15 December 2021].
+
+
 Analyzing the fame of a quote is of high interest for example for politicians or brands. Indeed, they are seeking to generate a quote that sticks in your head. But what makes the fame of a quote ? Does it depend on the speaker, on the content, or on the length of a quote ?
 
 First of all let see which speakers emitted the most famous quotes during the years 2015-2020. Unsurprisingly we see Donald Trump in the first place ! He is even indirectly mentionned in the most famous quote of Pope Francis “A person who thinks only about building walls …”. It is also very interesting to see that politicians emitted the largest number of famous quotes, as they are highly mediatized and all their words are reported and analyzed in newspapers.
