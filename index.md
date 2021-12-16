@@ -18,10 +18,7 @@ Anyway you better try our famous quote generator if you want to succeed, 100% ch
 
 
 Inspiring no? Post it right away on twitter or instagram and let the magic happen...
-(What? nonsense you’re saying? I think that you are just not ready for that new vision on syntax)
-
-
- 
+(What? nonsense you’re saying? I think that you are just not ready for that new vision on syntax)\
 ** While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous. **
 
 <p float="left">
