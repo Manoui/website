@@ -13,12 +13,12 @@ The main findings about this project can be find on the following website: https
 You can find all the steps and methods detailed on the M3 notebook, if you are only interested in a specific part, use the index.
 
 ### Preprocessing and filtering
-The notebook contains the performed preprocessing steps to obtain an exploitable and trustworthy dataset. Univariate analysis was carried out for each covariate to get a better understanding of the data. Then, multivariate data analysis will follow to understand the relation between the different covariates associated with a quote. 
+The notebook contains the performed preprocessing steps to obtain an exploitable and trustworthy dataset.
 
 ### Exploratory Data Analysis
 Once the dataset filtered and extended, we started to perform an univariate data analysis with summary statistics and graphical information on distribution of each covariate in order to get a better understanding of the data and design a more complex data analysis.
 
-Then, multivariate data analysis will follow to understand the relation between the different covariates associated with a quote. We will use scatterplots in order to understand the correlation between the different variables and linear regression to have a more complete insight on their relation.
+Then, multivariate data analysis followed to understand the relation between the different covariates associated with a quote. We will use scatterplots in order to understand the correlation between the different variables and linear regression to have a more complete insight on their relation.
 
 
 ### Dataset enrichment
@@ -33,7 +33,7 @@ It allows us to generate new features to complete our dataset and better charact
 
 
 ### Supervised Learning
-We wanted to try different supervised learning ML models on the dataset, like random forest, CNN or logistic regression to predict using the available features if a given quote is famous or not. The idea would be to test different models and assess their performance using adequate metrics like accuracy or F1 score. Before training our models on the dataset, we wanted to explore how to enrich the features with more covariates since some models perform better with more variables.
+We wanted to try different supervised learning ML models on the dataset, like random forest, CNN or logistic regression to predict using the available features if a given quote is famous or not. The idea was to test different models and assess their performance using adequate metrics like accuracy, precision and recall. Before training our models on the dataset, we wanted to explore how to enrich the features with more covariates since some models perform better with more variables.
 
 Libraries to use: Sklearn (random forest and logistic regression), Keras (CNN)
 
