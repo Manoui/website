@@ -9,21 +9,14 @@ Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump
 
 
 {%  include templates/index_1512_2.html  %}
-(train a model only on quote features so the user doesn’t have to enter any info or ask for nationality, gender etc?)
 
-Display a sentence based on the result:
-* If ‘not famous’: Ouch too bad, did you really mean to say that? It sucks maybe, try our famous quote generator 
-peut être marrant de mettre des phrases hyper cassantes comme sur How Bad Is Your Streaming Music? (pudding.cool)
-* If ‘famous’: Wow impressive you’re definitely going somewhere with that spirit!
-
-Anyway you better try our famous quote generator if you want to succeed, enter the first words of your sentence and the length of words and here we go:
+Anyway you better try our famous quote generator if you want to succeed, 100% chance of success. Click on the button and here we go:
 
 ** WIDGET (quote generator)**
 {%  include quotes_generator_final.html  %}
 
-Inspiring no? Post it right away on twitter or instagram and let the magic happen
--WIDGET (put the quote on a ‘inspirational quote background’)-
-Un truc qui génère des images de ce type ça pourrait être marrant, avec un truc pour les poster direct sur insta ou fb haha
+Inspiring no? Post it right away on twitter or instagram and let the magic happen...
+(What? nonsense you’re saying? I think that you are just not ready for that new vision on syntax)
 
 
  
