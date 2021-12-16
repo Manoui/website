@@ -43,16 +43,15 @@ So what makes the fame of a quote ? Does it depend on the speaker, on the conten
 
 
 #### Data
-The data at our disposition was the corpus of Quotebank containing citations extracted from newspapers over the years 2015-2020. If you are interested on the methods used to extract quotes, and attribute it to speakers, have a look at the [paper](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf). You can also use this related [tool](https://quotebank.dlab.tools) that allows you to enter a keyword and it will search the database for related quotes and show you its occurrence over time.
+The data at our disposition was the corpus of Quotebank containing citations extracted from newspapers over the years 2008 to 2020. If you are interested on the methods used to extract quotes, and attribute it to speakers, have a look at the [paper](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf). You can also use this related [tool](https://quotebank.dlab.tools) that allows you to enter a keyword and it will search the database for related quotes and show you its occurrence over time.
 
-Using this set of quotes, we selected only the 1% of the most famous quotes with more than 215 occurrences, and also sampled randomly quotes with less than 10 occurrences to be considered as non-famous. With this set of quotes we aim at analyzing what makes a quote famous or what makes fall into neglect.
+Using this set of quotes (2015-2020), we selected only the 1% of the most famous quotes with more than 215 occurrences, and also sampled randomly quotes with less than 10 occurrences to be considered as non-famous. With this set of quotes we aim at analyzing what makes a quote famous or what makes it fall into neglect. In order to be able to compare those sets on quotes features (polarity, complexity of a sentence, etc.) and speakers features (occupation, nationality etc.), we decided to remove quotes without attributed speaker and keep only famous speakers. This avoid artifacts of quotes being often cited bcause of differences in fame among speakers that we cannot account for. Therefore, we selected famous and non-famous quotes from speakers appearing in the [Pantheon database](Yu, A. Z., et al. (2016). Pantheon 1.0, a manually verified dataset of globally famous biographies. Scientific Data 2:150075. doi: 10.1038/sdata.2015.75)). It was generated on the base of wikipedia bibliographies views, the number of different wikipedia languages, the coefficient of variation etc. and it combines those values in a single metrics, the historical popularity index (HPI).
 
-
+So, let us now dive into the data and see if we can figure out what contributes to a quote being cited several times.
 
 
 ### What are the trends ?
-
-First of all let see which famous speakers (based on the [Pantheon database](Yu, A. Z., et al. (2016). Pantheon 1.0, a manually verified dataset of globally famous biographies. Scientific Data 2:150075. doi: 10.1038/sdata.2015.75)) emitted the most famous quotes during the years 2015-2020. 
+First, you can have a glimpse at the number of different quotes emitted by the top 20 of people emitting the most famous quotes over time, as well as the quote with the most occurrences.
 
 {% include famous_speakers.html %}
 
@@ -99,6 +98,7 @@ It is also interesting the distribution of topics among famous speakers.
 
 Du coup à enlever ?
 {% include nationality_occupation_complexity.html %}
+
 
 ### Predict fame
 
