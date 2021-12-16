@@ -10,6 +10,8 @@ We decided to explore what makes a famous quote. Is it its length? It’s topic?
 The main findings about this project can be find on the following website: https://manoui.github.io/website/
 
 ## Methods
+You can find all the steps and methods detailed on the M3 notebook, if you are only interested in a specific part, use the index.
+
 ### Preprocessing and filtering
 The notebook contains the performed preprocessing steps to obtain an exploitable and trustworthy dataset. Univariate analysis was carried out for each covariate to get a better understanding of the data. Then, multivariate data analysis will follow to understand the relation between the different covariates associated with a quote. 
 
@@ -20,9 +22,11 @@ Then, multivariate data analysis will follow to understand the relation between 
 
 
 ### Dataset enrichment
-In order to enrich our dataset with new features, we needed to compute them using available methods. The first thing we extracted was the number of words and characters in a quote. Then, some NLP methods allowed us to extract for instance the polarity and subjectivity of a quote, that is to say its sentiment. We also computed the complexity of a sentence using the Gunning Fog score. Using Spacy, we identified the grammatical content of a sentence, that is to say the number of NOUNS, VERBS, ADJECTIVES etc. Entities present in the quote such as PERSON, PLACE, ORGANIZATION were also counted. This can be achieved using the Textblob library. 
+In order to enrich our dataset with new features, we needed to compute them using available methods. The first thing we extracted was the number of words and characters in a quote. Then, some NLP methods allowed us to extract for instance the polarity and subjectivity of a quote, that is to say its sentiment. We also computed the complexity of a sentence using the Gunning Fog score. Using Spacy, we identified the grammatical content of a sentence, that is to say the number of NOUNS, VERBS, ADJECTIVES etc. Entities present in the quote such as PERSON, PLACE, ORGANIZATION were also counted.
 
-We also want to try to retrieve the topic of a quote in order to see if a specific theme is more plebiscite than others. The most promising way to do so is by using topic modelling. The most popular topic modelling technique is called LDA which allows you to retrieve hidden themes in a text. It’s an unsupervised learning method that can be implemented in python.
+Info about the speakers:
+
+We tried to retrieve the topic of a quote in order to see if a specific theme is more plebiscite than others. The most promising way to do so is by using topic modelling. The most popular topic modelling technique is called LDA which allows you to retrieve hidden themes in a text. It’s an unsupervised learning method that can be implemented in python.
 
 It allows us to generate new features to complete our dataset and better characterize the quotes we are interested in, and that we hope will help with supervised learning methods and downstream analysis.
 
@@ -37,22 +41,22 @@ Libraries to use: Sklearn (random forest and logistic regression), Keras (CNN)
 We tried different methods on unsupervised learning like:... But the results weren't conclusive so we didn't continue with trying to identify clusters in our data
 
 ### Sentence embeddings
-We could use some state-of-the-art natural language processing methods and generate embeddings of the quotes using BERT or ELMo models. This word representation allows to detect sentences that are closer in the embedding space and thus reveal interesting patterns. Using PCA, we could visualize clustering by keeping 2 principal components. Cosine distance between quotes could be computed in order to determine their proximity in the embedding space. Embeddings and clustering could hence be used for unsupervised machine learning methods.
-
-Libraries to use: sentence_transformer (embeddings), sklearn (PCA)
-
+We generated embeddings of the quotes using BERT model. This word representation allows to detect sentences that are closer in the embedding space and thus might reveal interesting patterns. Using PCA, we tried to visualize clustering by keeping 2 principal components. Unfortunalty, we didn't observe any clustering between the famous and not famous quotes so we left the embeddings aside for the final analysis.
 
 ### Text generation
-The last step of the project was build a 'famous quote generator' that learns how to generate a 'famous' quote that we can use to be famous thanks to ADA. We selected a corpus of the 1000 most famous quotes across years, ranging from 98263 to 1028 occurrences. The text was preprocessed in order to remove punctuation and numbers as well as multiple spacing. An LSTM model was created and trained on 100 epoch using this corpus. The output of the model is the probability of the next word in the sequence. Once the model was trained, we generated new sentences using a random seed of 4 words and limiting its length to 13 words since it is the median length of famous quotes.
+The last step of the project was to build a 'famous quote generator' that learns how to generate a 'famous' quote that we can use to be famous thanks to ADA. We selected a corpus of the 1000 most famous quotes across years, ranging from 98263 to 1028 occurrences. The text was preprocessed in order to remove punctuation and numbers as well as multiple spacing. An LSTM model was created and trained on 100 epoch using this corpus. The output of the model is the probability of the next word in the sequence. Once the model was trained, we generated new sentences using a random seed of 4 words and limiting its length to 13 words since it is the median length of famous quotes.
+
+The sentences generated are not too bad considering the small dataset and the simplicity of our model. It successfully link ideas like 'terrorism' or 'murder' to 'horrible', 'victims' or 'resilience'. The syntax is a bit sketchy at times, but the grammatical order is usually respected. We still could generate some nice quotes such as:
+"These murderous attacks have once again showed us the total hatred of humanity.” This one could definitly become a famous quote.
 
 # Task
-Manon: preprocessing, supervised learning, univariate data analysis, plotting
-Pauline: speaker features, supervised learning, website
-Elodie: feature enrichment using NLP, generation of embeddings, quote generator
-Oihana: topic extraction, figures, notebook
+* Manon: preprocessing, supervised learning, univariate data analysis, plotting
+* Pauline: speaker features, supervised learning, website
+* Elodie: feature enrichment using NLP, generation of embeddings, quote generator
+* Oihana: topic extraction, figures, notebook
 
 # What did we learn?
-We really enjoyed working on the project, which was fun and motivating till the end. We discovered a lot of different tools to play around with the dataset we had, and there are still some possibilities that we didn't explored.  We were a bit disappointed not to find some groundbreaking info about what makes a famous quote, but this teached us an important lesson: it is not really the quote which makes you famous but you.
+We really enjoyed working on the project, which was fun and motivating till the end. We discovered a lot of different tools to play around with the dataset we had, and there are still some possibilities that we didn't explored.  We were a bit disappointed not to find some groundbreaking info about what makes a famous quote, but we guess that's what ADA is about. Anyway, it teached us an important lesson: it is not really the quote which makes you famous but what you makes of it.
 
 
 
