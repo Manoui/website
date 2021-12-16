@@ -17,6 +17,7 @@ peut être marrant de mettre des phrases hyper cassantes comme sur How Bad Is Yo
 Anyway you better try our famous quote generator if you want to succeed, enter the first words of your sentence and the length of words and here we go:
 
 ** WIDGET (quote generator)**
+{%  include quotes_generator_final.html  %}
 
 Inspiring no? Post it right away on twitter or instagram and let the magic happen
 -WIDGET (put the quote on a ‘inspirational quote background’)-
