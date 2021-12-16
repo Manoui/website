@@ -13,8 +13,8 @@ Anyway you better try our famous quote generator if you want to succeed, 100% ch
 ** WIDGET (quote generator)**
 
 <p float="left">
-  <img src="images/space.png" width="300" height="300">
-  <img src="images/forest.png" width="350" height="350"> 
+  <img src="images/space.jpg" width="300" height="300">
+  <img src="images/forest.jpg" width="350" height="350"> 
 </p>
 
 
