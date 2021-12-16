@@ -12,46 +12,7 @@ First, try to write something, we’ll tell you if your words will become famous
 Anyway you better try our famous quote generator if you want to succeed, 100% chance of success. Click on the button and here we go:
 ** WIDGET (quote generator)**
 
-
-   <button id="Click Me" href="#" onClick="img(); text()">Click me to get a chance to be famous</button>
- 
-	<div class="container">
-		 <img id="RandomImg" style="width:50%;">
-		
-		<div class="centered" id="Randomquotes" style="position: absolute;top: 100%;left: 50%;transform: translate(-15%, -15%);color:white"></div>
-	</div>
-        
-        <script language="javascript">
-          
-            function img() {
-				
-            var listurlimg = [
-       "images/space.jpg",
-        "images/forest.jpg",
-        "images/Blue_mountains.jpg"];
-        
-		var randomImg= document.getElementById("RandomImg");
-		
-          randomIndex = Math.ceil((Math.random()*listurlimg.length-1));
-          newImg = listurlimg[randomIndex];
-          randomImg.src = newImg;
-		}
-           
-        function text() {
-			var randomStrings= [
-        "Bonjour, je m'appelle Donald",
-        "America is great again",
-        "Yes we can", 
-        "Now or never",
-        "Shoot the moon you'll land in the stars" ]
-        var randomDiv = document.getElementById("Randomquotes");
-        randomIndex = Math.ceil((Math.random()*randomStrings.length-1));
-		newText = randomStrings[randomIndex];
-        randomDiv.innerHTML = newText;
-        
-        } 
-        </script>
-
+{% include quotes_generator_final.html %}
 
 
 Inspiring no? Post it right away on twitter or instagram and let the magic happen...
