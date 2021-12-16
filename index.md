@@ -1,21 +1,21 @@
 
 
 > # “Shoot for the moon. Even if you miss, you'll land among the stars.” Norman Vincent Peale
-
+<p align="center">centered 
 Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to be famous? Then this website might help you!
 
 First, try to write something, we’ll tell you if your words will become famous:
-"boo"
+"boo2"
 
 {% include button_1.html%}
 
 
 
-Anyway you better try our famous quote generator if you want to succeed, 100% chance of success. Click on the button and here we go:\
+<p> Anyway you better try our famous quote generator if you want to succeed, 100% chance of success. Click on the button and here we go:
 ** WIDGET (quote generator)**
 Inspiring no? Post it right away on twitter or instagram and let the magic happen...
 (What? nonsense you’re saying? I think that you are just not ready for that new vision on syntax)
-** While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous. **
+** While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous. **</p>
 
 <p float="left">
   <img src="images/people_slogan.png" width="300" height="300">
