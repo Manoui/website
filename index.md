@@ -23,7 +23,7 @@ Anyway you better try our famous quote generator if you want to succeed, 100% ch
    <button id="Click Me" href="#" onClick="img(); text()">Click me to get a chance to be famous</button>
  
 	<div class="container">
-		<img id="RandomImg" style="width:50%;">
+		 <img src="images/space.jpg" width="300" height="300">
 		
 		<div class="centered" id="Randomquotes" style="position: absolute;top: 10%;left: 20%;transform: translate(-15%, -15%);color:white"></div>
 	</div>
