@@ -56,7 +56,7 @@ The sentences generated are not too bad considering the small dataset and the si
 * Oihana: topic extraction, figures, notebook
 
 # What did we learn?
-We really enjoyed working on the project, which was fun and motivating till the end. We discovered a lot of different tools to play around with the dataset we had, and there are still some possibilities that we didn't explored.  We were a bit disappointed not to find some groundbreaking info about what makes a famous quote, but we guess that's what ADA is about. Anyway, it teached us an important lesson: it is not really the quote which makes you famous but what you makes of it.
+We really enjoyed working on the project, which was fun and motivating till the end. We discovered a lot of different tools to play around with the dataset we had, and there are still some possibilities that we didn't explored.  We were a bit disappointed not to find some groundbreaking info about what makes a famous quote, but we guess that's what ADA is about. Anyway, it teached us an important lesson: it is not really the quote which makes you famous but what you make out of it.
 
 
 
