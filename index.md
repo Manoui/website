@@ -5,10 +5,10 @@
 Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to be famous? Then this website might help you!
 
 First, try to write something, we’ll tell you if your words will become famous:
-"boo3"
+"boo4"
 
-{% include button_1.html%}
 
+{% include quotes_generator_final.html %}
 
 
 Anyway you better try our famous quote generator if you want to succeed, 100% chance of success. Click on the button and here we go:
