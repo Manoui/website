@@ -8,11 +8,14 @@ First, try to write something, we’ll tell you if your words will become famous
 "boo4"
 
 
-{% include quotes_generator_final.html %}
+{% include button_1.html %}
 
 
 Anyway, you better try our famous quote generator if you want to succeed, 100% chance of success. Click on the button and here we go:
 ** WIDGET (quote generator)**
+
+{% include quotes_generator_final.html %}
+
 Inspiring no? Post it right away on Twitter or Instagram and let the magic happen...
 (What? nonsense you’re saying? I think that you are just not ready for that new vision on syntax)
   
