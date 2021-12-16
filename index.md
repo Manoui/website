@@ -1,6 +1,6 @@
 
 
-> “Shoot for the moon. Even if you miss, you'll land among the stars.” Norman Vincent Peale
+> # “Shoot for the moon. Even if you miss, you'll land among the stars.” Norman Vincent Peale
 
 Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to be famous? Then this website might help you! First, try to write something, we’ll tell you if your words will become famous:
 
