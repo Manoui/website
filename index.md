@@ -25,8 +25,7 @@ Anyway you better try our famous quote generator if you want to succeed, 100% ch
 	<div class="container">
 		<img id="RandomImg" style="width:50%;">
 		
-		<div class="centered" id="Randomquotes" style="position: absolute;top: 10%;
-  left: 20%;transform: translate(-15%, -15%);color:white"></div>
+		<div class="centered" id="Randomquotes" style="position: absolute;top: 10%;left: 20%;transform: translate(-15%, -15%);color:white"></div>
 	</div>
         
         <script language="javascript">
