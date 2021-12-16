@@ -15,6 +15,8 @@ Anyway you better try our famous quote generator if you want to succeed, 100% ch
 {% include quotes_generator_final.html %}
 
 
+
+
 Inspiring no? Post it right away on twitter or instagram and let the magic happen...
 (What? nonsense you’re saying? I think that you are just not ready for that new vision on syntax)
 
