@@ -6,6 +6,7 @@ Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump
 
 First, try to write something, we’ll tell you if your words will become famous:
 
+{% include button_1.html%}
 
 
 
