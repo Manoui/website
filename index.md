@@ -103,6 +103,7 @@ It is also interesting the distribution of topics among famous speakers.
 You may have already developed an intuition that most famous quotes are emitted by politicians in North America, covering mostly politics or justice. 
 
 {% include famous_combinations.html %}
+{% include nonfamous_combinations.html %}
 
 Would you want to consider some additional parameters to predict the fame of a quote? 
 
