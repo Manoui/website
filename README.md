@@ -18,16 +18,15 @@ The notebook contains the performed preprocessing steps to obtain an exploitable
 ### Exploratory Data Analysis
 Once the dataset was filtered and extended, we performed a univariate data analysis with summary statistics and graphical information on the distribution of each covariate in order to get a better understanding of the data and design a more complex data analysis.
 
-Then, multivariate data analysis followed to understand the relation between the different covariates associated with a quote. We will use scatterplots in order to understand the correlation between the different variables and linear regression to have a more complete insight into their relationship.
+Then, multivariate data analysis followed to understand the relation between the different covariates associated with a quote. We use scatterplots in order to understand the correlation between the different variables and barcharts with colored features to have a more complete insight into their relationship.
 
 
 ### Dataset enrichment
 In order to enrich our dataset with new features, we needed to compute them using available methods. The first thing we extracted was the number of words and characters in a quote. Then, some NLP methods allowed us to extract for instance the polarity and subjectivity of a quote, that is to say, its sentiment. We also computed the complexity of a sentence using the Gunning Fog score. Using Spacy, we identified the grammatical content of a sentence, that is to say, the number of NOUNS, VERBS, ADJECTIVES, etc. Entities present in the quote such as PERSON, PLACE, ORGANIZATION were also counted.
 
-Info about the speakers:
-We decided 
-
 We tried to retrieve the topic of a quote in order to see if a specific theme is more plebiscite than others. The most promising way to do so is by using topic modelling. The most popular topic modeling technique is called LDA which allows you to retrieve hidden themes in a text. It’s an unsupervised learning method that can be implemented in python.
+
+Considering now the speaker emitting the quote, we could not properly account for the differences in fame of all the speaker. Therefore, we filter only for quotes from famous people (as defined by the [Pantheon database](https://doi.org/10.7910/DVN/28201) to analyze what makes the fame of a quote. The Pantheon dataset was generated on the basis of Wikipedia bibliographies views, the number of different Wikipedia languages, the coefficient of variation etc. and it combines those values in a single metric, the historical popularity index (HPI). The HPI score will also be included as a feature to account for the remaining differences in speaker's fame. Moreover, this filtering step on famous speakers also allows to remove 'missense' quotes (not emitted by speakers, bur rather text passages wrongly interpreted as a quote). We also considered some additional features about the speaker, its continent of origin, its occupation, its gender, and  whether he was alive at the date at which the quote was emitted.
 
 It allows us to generate new features to complete our dataset and better characterize the quotes we are interested in, which we hope will help with supervised learning methods and downstream analysis.
 
@@ -39,7 +38,7 @@ We wanted to try different supervised learning ML models on the dataset, like ra
 Libraries to use: Sklearn (random forest and logistic regression), Keras (CNN)
 
 ### Unsupervised Learning
-We tried different methods on unsupervised learning like:... But the results weren't conclusive so we didn't continue with trying to identify clusters in our data
+We tried different methods on unsupervised learning like k-NN or DBSCAN clustering, or KPrototypes for clustering with categorical and numerical features, or even KModes considering only categorical features. But the results weren't conclusive so we didn't continue trying to identify clusters in our data.
 
 ### Sentence embeddings
 We generated embeddings of the quotes using the BERT model. This word representation allows detecting sentences that are closer in the embedding space and thus might reveal interesting patterns. Using PCA, we tried to visualize clustering by keeping 2 principal components. Unfortunalty we didn't observe any clustering between the famous and not famous quotes so we left the embeddings aside for the final analysis.
