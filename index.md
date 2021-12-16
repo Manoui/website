@@ -83,7 +83,7 @@ Also, you may want to consider combining some features. What do you observe ?
 
 {% include gender_occupation.html %}
 
-Perhaps you are wondering, what are the quotes about ? You may have already guessed that most famous quotations over time are related to politics, but justice also appears frequently, a bit less lkely are arts and environment. Quotes were tagged with a topic defined by [Empath](https://arxiv.org/pdf/1602.06979.pdf).
+Perhaps you are wondering, what are the quotes about ? You may have already guessed that most famous quotations over time are related to politics, but justice also appears frequently, a bit less lkely are arts and environment. Quotes were tagged using [Empath](https://arxiv.org/pdf/1602.06979.pdf), a tool that can generate and validate new lexical categories on demand from a small set of seed terms,which where manually defined based on Macmillan Thesaurus.
 
 {% include topic_timeseries.html %}
 
