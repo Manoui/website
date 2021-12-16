@@ -12,20 +12,13 @@ First, try to write something, we’ll tell you if your words will become famous
 Anyway you better try our famous quote generator if you want to succeed, 100% chance of success. Click on the button and here we go:
 ** WIDGET (quote generator)**
 
-<p float="left">
-  <img src="images/space.jpg" width="300" height="300">
-  <img src="images/forest.jpg" width="350" height="350"> 
-</p>
-
-
-
 
    <button id="Click Me" href="#" onClick="img(); text()">Click me to get a chance to be famous</button>
  
 	<div class="container">
 		 <img id="RandomImg" style="width:50%;">
 		
-		<div class="centered" id="Randomquotes" style="position: absolute;top: 10%;left: 20%;transform: translate(-15%, -15%);color:white"></div>
+		<div class="centered" id="Randomquotes" style="position: absolute;top: 100%;left: 50%;transform: translate(-15%, -15%);color:white"></div>
 	</div>
         
         <script language="javascript">
