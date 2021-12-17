@@ -5,7 +5,7 @@
 
 Did you ever dream of your words like the ones of Shakespeare, Einstein, or Trump remaining forever etched in the memory of humanity?  Would you like to be famous? Then this project might help you!
 
-We decided to explore what makes a famous quote. Is it its length? It’s topic? Or something only a proper EDA could reveal? The idea is to study a maximum number of features of quotes evaluated as ‘famous’ in order to try to characterize the perfect quote. Maybe this study will reveal some hidden patterns about them. Combined with ML and NLP, we could create a perfect quote generator and try to become famous thanks to ADA!
+We decided to explore what makes a famous quote. Is it its length? It’s topic? Or something only a proper EDA could reveal? The idea is to study a maximum number of features of quotes evaluated as ‘famous’ in order to try to characterize the perfect quote. Maybe this study will reveal some hidden patterns about them. Combined with Machine Learning (ML) and Natural Language Processing(NLP), we could create a perfect quote generator and try to become famous thanks to ADA!
 
 The main findings of this project can be found on the following website: https://manoui.github.io/website/
 
