@@ -77,26 +77,37 @@ Oups there seem to be a bias in our dataset... Indeed most of the english quotes
 
 ## Take your bets!
                                                              
-Now it is your turn to take guesses on what makes the fame of a quote by selecting some parameters and seeing their distribution across famous and ‘non-famous’ quotes. You can see parameters at the speakers level, as well as at the quote level. Indeed, using [TextBlob](https://pypi.org/project/textblob/0.9.0/) a natural language processing (NLP) library we defined the polarity and subjectivity of a quote. Polarity scores were calculated on the quotes and range from -1 (negative) to 1 (positive), with 0 representing neutral quotes. Subjectivity scores range from 0 to 1 and we consider subjective quotes with a score above 0.5. 
-So, which individual features do you predict can differentiate famous from non-famous quotes?
+Now it is your turn to take guesses on what makes the fame of a quote by selecting some parameters and seeing their distribution across famous and ‘non-famous’ quotes. You can see parameters at the speakers level, as well as at the quote level. Indeed, using [TextBlob](https://pypi.org/project/textblob/0.9.0/) a natural language processing (NLP) library we defined the polarity and subjectivity of a quote. Polarity scores were calculated on the quotes and range from -1 (negative) to 1 (positive), with 0 representing neutral quotes. Subjectivity scores range from 0 to 1 and we consider subjective quotes with a score above 0.5 (subjective quotes express an opinion or feeling as opposed to factual quotes).
+So, which individual features do you predict can differentiate famous from non-famous quotes? (more info about the features under the figure)
 
 {% include proportion_features_famous_nonfamous.html %}
+
+The jobs are defined as followed:
+* POLITICS: 'POLITICIAN', 'JUDGE', 'LAWYER', 'SOCIAL ACTIVIST' etc
+* NEGATIVE_CONNOTATION_JOB:'PORNOGRAPHIC ACTOR', 'MAFIOSO', 'POKER PLAYER', 'EXTREMIST' etc
+* MEDIA_ARTS: 'COMEDIAN', 'SINGER', 'PRESENTER' etc
+* MEDIA_SCIENCE: 'INVENTOR', 'ASTRONAUT' etc (such as Elon Musk)
+* ARTS: 'PHOTOGRAPHER', 'FILM DIRECTOR', 'PAINTER' etc
+* SPORTS: 'ATHLETES', 'SOCCER PLAYER', 'COACH' etc
+* SCIENCES: 'PHYSICIAN', 'CHEMIST' etc
 
 Also, you may want to consider combining some features. What do you observe ?
 
 {% include gender_occupation.html %}
 
-Perhaps you are wondering, what are the quotes about? Let's take a look into the topic distribution over famous and non-famous quotes. Would you expect a difference in topics between famous and non-famous quotes? If yes which topics would be more or less prominent?
+We see that for both genders politicians are the most represented in the famous quotes. But we can see that there is a higher proportion of women in MEDIA_ARTS who are quoted than men. We can observe the inverse effect for SPORTS, where men quotes are more represented. In general, non-famous quotes have a better coverage of all topics whereas famous quotes are centered around politics, media arts and sports.
+
+Perhaps you are wondering, what are these quotes about? Maybe that's what makes them famous! Let's take a look into the topic distribution over famous and non-famous quotes. Would you expect a difference in topics between famous and non-famous quotes? If yes which topics would be more or less prominent?
 
 {% include topic_timeseries.html %}
 
-You may have already guessed that most famous quotations over time are related to justice and politics. Whereas arts and environment are a bit less likely (maybe consequence of a certain climatosceptic presisdent...?). Quotes were tagged using [Empath](https://arxiv.org/pdf/1602.06979.pdf), a tool that can generate and validate new lexical categories on demand from a small set of words, which were manually defined.
+You may have already guessed that most famous quotations over time are related to justice and politics. Whereas arts and environment are a bit less likely (maybe consequence of a certain climatosceptic president...?). Quotes were tagged using [Empath](https://arxiv.org/pdf/1602.06979.pdf) and generating manually lexical fields for topics.
 
 {% include topic_analysis.html %}
 
 Both types of quotes have a high percentage of quotes related to justice. Sports represents 21% of non-famous quotes, whereas it only makes up for 4.73% of famous quotes seems. Politics is in contrast twice much more present in famous quotes compared to non-famous.
 
-It is also interesting the distribution of topics among famous speakers, we took a look at the quotes from Trump and Pope Francis:
+It is also fun to see the distribution of topics among famous speakers, let's take a look at the quotes from Trump and Pope Francis:
 
 {% include topic_analysis_DT_PF.html %}
 
@@ -105,25 +116,27 @@ We also analyzed if a quote mentioned a place, a person, a work of art, an organ
 {% include theme_analysis.html %}
 
 The key is the following:
-PERSON People, including fictional.\
-NORP Nationalities or religious or political groups.\
-FAC Buildings, airports, highways, bridges, etc.\
-ORG Companies, agencies, institutions, etc.\
-GPE Countries, cities, states.\
-LOC Non-GPE locations, mountain ranges, bodies of water.\
-PRODUCT Objects, vehicles, foods, etc. (Not services.)\
-EVENT Named hurricanes, battles, wars, sports events, etc.\
-WORK_OF_ART Titles of books, songs, etc.\
-LAW Named documents made into laws.\
-LANGUAGE Any named language.\
-DATE Absolute or relative dates or periods.\
-TIME Times smaller than a day.\
-PERCENT Percentage, including "%".\
-MONEY Monetary values, including unit.\
-QUANTITY Measurements, as of weight or distance.\
-ORDINAL "first", "second", etc.\
-CARDINAL Numerals that do not fall under another type
+* PERSON People, including fictional.\
+* NORP Nationalities or religious or political groups.\
+* FAC Buildings, airports, highways, bridges, etc.\
+* ORG Companies, agencies, institutions, etc.\
+* GPE Countries, cities, states.\
+* LOC Non-GPE locations, mountain ranges, bodies of water.\
+* PRODUCT Objects, vehicles, foods, etc. (Not services.)\
+* EVENT Named hurricanes, battles, wars, sports events, etc.\
+* WORK_OF_ART Titles of books, songs, etc.\
+* LAW Named documents made into laws.\
+* LANGUAGE Any named language.\
+* DATE Absolute or relative dates or periods.\
+* TIME Times smaller than a day.\
+* PERCENT Percentage, including "%".\
+* MONEY Monetary values, including unit.\
+* QUANTITY Measurements, as of weight or distance.\
+* ORDINAL "first", "second", etc.\
+* CARDINAL Numerals that do not fall under another type
+* NONE no entity detected
 
+As you can see, making reference to one of the entity mentioned aboved doesn't seem to play a role in the fame of a quote. The distribution is more or less the same between famous and non-famous quotes so we better look somewhere else...
 
 ## How to be a mainstream famous quote emitter:
 
