@@ -28,7 +28,7 @@ Or are negative quotes more famous than positive ones? Are some topics more tren
 his/her quote. Are the emitters of famous quote distributed equally across continents? Is the fact that the speaker is alive or dead when the quote is cited important?
 Are people related to sports more mediatized than artists? It is indeed of high interest for politicians, influencers or companies to generate the perfect quote that will catch people attention.
 
-So while you have the time before the celebrity tornado sweeps you away, slip into the shoes of a data analysist to discover what impacts the fame of a quote!
+**So while you have the time before the celebrity tornado sweeps you away, slip into the shoes of a data analysist to discover what impacts the fame of a quote!**
 
 
 ## Say Hi to the dataset: Quotebank
@@ -96,18 +96,24 @@ It is also interesting the distribution of topics among famous speakers.
 
 ## How to be a mainstream famous quote emitter:
 
-You may have already developed an intuition that most famous quotes are emitted by politicians in North America, covering mostly politics or justice. 
+You may have already developed an intuition that most famous quotes are emitted by politicians in North America, covering mostly politics or justice. Let's see what combinations of the previously seen parameters seem to be the most successful when it comes to have a famous quote:
 
 {% include famous_combinations.html %}
+
+Uh-oh it looks like you have to be a male politician from North America if you want to be quoted somewhere. Too bad if you don't enter this box, but you can always give it a try :)
 {% include nonfamous_combinations.html %}
 
-Would you want to consider some additional parameters to predict the fame of a quote? 
 
-## Is 'platypus' often use in famous sentences?
+Now that we have a better overview of the profile of speakers behind famous quotes, we can take a closer look at the quotes.
+
+## Is the word 'platypus' often used in famous sentences?
+In the plot below you can slide over the plot with your cursor to see the most used words in famous versus non-famous quotes:
+
 {% include word_occurrence_stopwords.html %}
 
-In the plot below you can slide over the plot with your cursor to see the most used words in famous versus non-famous quotes. There are a lot of similarities in the highly frequent words, such as the use of ‘people’, ‘going’, ‘think’, etc. But some frequent words are specific to the famous quotes: ‘us’, ‘president’, ‘country’, etc. as compared to ‘like’, ‘really’, ’time’ in non-famous quotes.
-This relates to what you previously observed, in the majority of famous quotes are neutral, as compared to most positive quotes in non-famous ones. Moreover, you saw the high proportion of politician speakers in both the famous and non-famous datasets, which also explains the occurrence of some specific words.
+
+There are a lot of similarities in the highly frequent words, such as the use of ‘people’, ‘going’, ‘think’, etc. But some frequent words are specific to the famous quotes: ‘us’, ‘president’, ‘country’, etc. as compared to ‘like’, ‘really’, ’time’ in non-famous quotes.
+This relates to what you previously observed, you saw the high proportion of politician speakers in both the famous and non-famous datasets, which also explains the occurrence of some specific words.
 
 We also considered several additional parameters such as:
 * The length of a quote (the number of words, and characters)
@@ -116,7 +122,9 @@ We also considered several additional parameters such as:
 * Grammatical features based on [Part-of-speech tags](https://spacy.io/usage/linguistic-features#pos-tagging) to quantify the number of adverbs, nouns, etc. that a quote contains. This allowed attributing a complexity score to the quotation.
 * Named Entity Recognition [(NER)](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da) to identify the number of times a quote mentions a date, a person, an organization, an event, a language, etc.
 
-## What does machine learning think about it?**
+We chose only to present the most interesting results in this article but you can go and check on our Github for more about the methods and results:
+
+## And what does machine learning think about it?**
 
 Now let's check if your intuitions were correct. Have you heard about Machine Learning (ML for close friends)? Anyway don't worry this is not time and place to discuss gradient descent algorihtms.
 The only thing you need to know is that we created ML models that given an unseen quote, can predict if the quote will be famous or not. We trained a Random Forest and Logistic Regression models (don't worry about the names). And our model predicted the fame of new quotes with an accuracy of 74 %! That is to say it could tell in 74% of cases if a quote was famous or not. Here below, you can see which coefficients and their associated feature contributes the most to the prediction.
@@ -130,8 +138,8 @@ This is for the Random Forest model:
 {% include rf_coefficients.html %}
 
 
-###Famous quote generator:
-Some further explanation, about the quote generator you used at the top.
+## Famous quote generator:
+Some further explanation, about the quote generator you used at the top in case you are curious about it :)
 
 We selected a corpus of the 1000 most famous quotes across years, ranging from 98263 to 1028 occurrences in newspapers. The text was preprocessed in order to remove punctuation and numbers as well as multiple spacing. We trained a model (ML again!!!) on this corpus that learned the syntax and vocabulary of this corpus. The output of the model is the probability of the next word in a sequence of words (i.e. after 'I' one probable word is 'am' for instance). Once the model learned how to 'speak' in english, we generated new sentences limiting its length to 13 words since it is the median length of famous quotes. Ok the syntax is not perfect but the generator links successfully ideas like 'terrorism' and 'violence' or 'floods' and 'boat'. With more time and resources we could surely generate better quotes! --> invest in [Aficionada!](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
@@ -154,7 +162,7 @@ Wow some are very powerful and inspiring.
 ### Conclusion
 We hope you enjoyed your time on this website. As could see, the topic of a quote is more important than the speaker's features or the syntax of a sentence. Indeed, "Content is more than "subject matter. ' It is all the feelings and ideas you bring to your painting." - Rene Huyghe. The choice of words and the speaker seem less important than the information it conveys. However, as a good data scientist you must aknowledge the limitations of your analysis. First we saw that most of the quotes we have are from North America so the results are a bit biaised. Also we didn't take into account the intonation or speech context which might play an important role on how a quote is portrayed in the press. Anyway, quick go and check if your quote buzzed on the internet!
 
-**Thanks for reading! -The Aficionada Team**
+**Thanks for reading! We shot for the moon and landed in the star...  -The Aficionada Team**
 
 
 #### References
