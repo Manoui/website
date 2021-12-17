@@ -206,7 +206,7 @@ We hope you enjoyed your time on this website. As could see, the topic of a quot
 
 <p style="text-align:center">
    <font size="5" id="lien">
-     <i>Thanks for reading! We shot for the moon and landed in the star...  -The Aficionada Team</i>
+     <i>Thanks for reading! We shot for the moon and landed in the stars...</br> -The Aficionada Team-</i>
    </font>
 
 </p>
