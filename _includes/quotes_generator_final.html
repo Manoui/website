@@ -3,9 +3,9 @@
 	<center><button id="Click Me" href="#"  class="button" onClick="img(); text()"><b>I want to be famous</b></button></center>
 	<style>
 .button {
+	color:#FFFFFF;
   background-image: url(images/space3.jpg);
   border: none;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -13,6 +13,7 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+
 }
 </style>
        
@@ -20,7 +21,7 @@
 	
 		 <img id="RandomImg" style="width:100%;">
 		
-		<div class="centered" id="Randomquotes" style="position: absolute;top: 190%;left: 33%;transform: translate(-15%, -15%);color:red"></div>
+		<div class="centered" id="Randomquotes" style="position: absolute;top: 190%;left: 33%;transform: translate(-15%, -15%);color:white"></div>
 	
         
         <script language="javascript">
@@ -47,7 +48,7 @@
 					    'Overwhelming jerry and chris dogs lp which ralph gatti afp getty images don.', 'Of my life absolutely recognition everybody was just trying to he families and.', 'Floating down the street next to furniture and refrigerators out noisy out of.', 'Working for free in comparison to men in our never we united condemn.', 'Hanging d be on the front seat london from the bottom of my.', 'Often innocent blood doesn much matter to the dead they re going to.', 'Mark but they have never of life these murderous attacks have once again.', 'We will not let pity if this agreement step patriot and good man.', 'Drenched in blood often innocent blood doesn much matter to the dead they.', 'We re going to put those more grants peace to the whole world.', 'Allies are resolved to find you and it reflective iran and as relationship.', 'Child friend or parent the fair is reach of top the your often.', 'Heart well into the year my heart goes out to everyone affected in.', 'In the fight against but who seek to be the worst the the.', 'Us have made sacrifices and fought persistently deconstruction because he knows there is.', 'Think the liberal democrats has have guarantee on percent businesses behavior smear plain.', 'Turn their back on our neighbors have never liked less that all few.', 'Volunteers who are putting themselves at risk to save every day as any.', 'Feel the elected person opinion is the one the public has in right.', 'The laws of democracy miss you waves and reach this those but their.', 'For haven the right cherish your human connections happy to work with no.', 'Such barbarism is in excellent reporting in light acts big safety band should.', 'Ve lagged behind in health for a anymore is will were let be.', 'Alabama history and we feel respected as with party today jan flew and.', 'Practices community policing because it come to crisis butterfly broken from the bottom.', 'To get the water both patriot and good man rajoy has to spain.', 'We ought to go into in my film customer obsession road remix era.', 'It o to be coward if you win step patriot interface that significantly.', 'Not looking to the total annihilation fake fake disgusting news the about states.', 'Family men who care so much about their communities that what we need.', 'They re going to re following regular order engagement with the election terrorists.']
         var randomDiv = document.getElementById("Randomquotes");
         randomIndex = Math.ceil((Math.random()*randomStrings.length-1));
-		newText = randomStrings[randomIndex];
+		newText = '"'+randomStrings[randomIndex]+'"';
         randomDiv.innerHTML = newText;
         
         } 
