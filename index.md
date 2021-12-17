@@ -90,7 +90,7 @@ Perhaps you are wondering, what are the quotes about? Let's take a look into the
 
 {% include topic_timeseries.html %}
 
-You may have already guessed that most famous quotations over time are related to politics, but justice also appears frequently. Whereas arts and environment are a bit less likely (maybe consequence of a certain climatosceptic presisdent...?). Quotes were tagged using [Empath](https://arxiv.org/pdf/1602.06979.pdf), a tool that can generate and validate new lexical categories on demand from a small set of words, which were manually defined.
+You may have already guessed that most famous quotations over time are related to justice and politics. Whereas arts and environment are a bit less likely (maybe consequence of a certain climatosceptic presisdent...?). Quotes were tagged using [Empath](https://arxiv.org/pdf/1602.06979.pdf), a tool that can generate and validate new lexical categories on demand from a small set of words, which were manually defined.
 
 {% include topic_analysis.html %}
 
