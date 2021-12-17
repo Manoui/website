@@ -14,7 +14,7 @@
 <p style="color:white">saut de ligne</br></p>
 
      
-<u>First, try to write something, we’ll tell you if your words have a chance to become famous:</u>
+<u>First, try to write something, we’ll tell you if your words have a chance to become famous (max 140 characters):</u>
 {% include button_1.html %}
 
 Anyway, you better try our **famous quote generator** if you want to succeed, 100% chance of success. Click on the button and here we go:
