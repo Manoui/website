@@ -23,9 +23,6 @@
 
 </p>
 
-<div id="just-line-break"></div>
-<br/>
-<div id="line-break-and-tab"></div>
 
 ***
 
