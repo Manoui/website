@@ -90,9 +90,6 @@ It is also interesting the distribution of topics among famous speakers.
 
 <img src="images/example_topics.jpeg" width="600" height="300"> 
 
-**Du coup à enlever ?**
-{% include nationality_occupation_complexity.html %}
-
 
 ## How to be a mainstream famous quote emitter:
 
@@ -100,10 +97,12 @@ You may have already developed an intuition that most famous quotes are emitted 
 
 {% include famous_combinations.html %}
 
-Uh-oh it looks like you have to be a male politician from North America if you want to be quoted somewhere. Too bad if you don't enter this box, but you can always give it a try :)
+Uh-oh it looks like you have to be **a male politician from North America talking about politics** if you want to be quoted somewhere. Too bad if you don't enter this box, but you can always give it a try :)
+Now let's take a look at the combinations that yield non-famous quotes:
+
 {% include nonfamous_combinations.html %}
 
-
+Ok so it looks like european politicians that talk about sports are not really popular...
 Now that we have a better overview of the profile of speakers behind famous quotes, we can take a closer look at the quotes.
 
 ## Is the word 'platypus' often used in famous sentences?
@@ -126,7 +125,7 @@ We chose only to present the most interesting results in this article but you ca
 
 ## And what does machine learning think about it?**
 
-Now let's check if your intuitions were correct. Have you heard about Machine Learning (ML for close friends)? Anyway don't worry this is not time and place to discuss gradient descent algorihtms.
+Now let's check if your intuitions were correct. Have you heard about Machine Learning (ML for close friends)? Anyway don't worry this is not time and place to discuss stochastic gradient descent algorithms.
 The only thing you need to know is that we created ML models that given an unseen quote, can predict if the quote will be famous or not. We trained a Random Forest and Logistic Regression models (don't worry about the names). And our model predicted the fame of new quotes with an accuracy of 74 %! That is to say it could tell in 74% of cases if a quote was famous or not. Here below, you can see which coefficients and their associated feature contributes the most to the prediction.
 
 This is for the firt Logistic Regression model:
