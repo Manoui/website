@@ -242,5 +242,4 @@ We hope you enjoyed your time on this website. We saw that the syntax and sentim
 
 * GitHub link for the README and the Python notebook: https://github.com/epfl-ada/ada-2021-project-aficionada.git
 
-* 
-* 
+
