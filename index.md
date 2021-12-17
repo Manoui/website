@@ -47,6 +47,8 @@
 ### **Inspiring no?** Post it right away on Twitter or Instagram and let the magic happen... 
 (What? The syntax isn't right? ? Maybe our generator needs a little bit more training)
 
+***
+
 <p style="text-align:center">
    <font size="5" id="lien">
      <b>While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous.</b>
