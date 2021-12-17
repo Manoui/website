@@ -233,6 +233,10 @@ Wow some are very powerful and inspiring.
 ### Conclusion
 We hope you enjoyed your time on this website. We saw that the syntax and sentiment of a quote are not that important in making it famous or not. Most of the emitters of famous quotes are politicians, but it is not surprising because they are highly mediatized in the newspapers. Maybe they have a special talent with words? However, as a good data scientist, you must acknowledge the limitations of your analysis. First, we saw that most of the quotes we have are from North America so the results are a bit biased. Also, we didn't take into account the intonation or speech context which might play an important role in how a quote is portrayed in the press. Anyway, quick go and check if your quote buzzed on the internet!
 
+<div id="just-line-break"></div>
+<br/>
+<div id="line-break-and-tab"></div>
+
 <p style="text-align:center">
    <font size="5" id="lien">
      <i>Thanks for reading! We shot for the moon and landed in the stars...<br> -The Aficionada Team-</i>
@@ -242,6 +246,10 @@ We hope you enjoyed your time on this website. We saw that the syntax and sentim
 
 
 <div id="just-line-break"></div>
+
+<div id="just-line-break"></div>
+<br/>
+<div id="line-break-and-tab"></div>
 
 ### References
 
