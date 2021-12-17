@@ -10,23 +10,23 @@
 
 <div id="line-break-and-tab"></div>
 
-<p style="color:white">saut de ligne</p>
 
 <p style="text-align:center">
    <font size="6" id="lien">
      <b>Did you ever dream of your words like the ones of Shakespeare, Einstein, or Trump remaining forever etched in the memory of humanity ? Would you like to be famous ? Then this website might help you !</b>
    </font>
+ 
 
 </p>
 
-<p style="color:white">saut de ligne</br></p>
+***
 
      
 ### First, try to write something, we’ll tell you if your words have a chance to become famous (max 140 characters):
 {% include button_1.html %}
 
 ### Anyway, you better try our **famous quote generator** if you want to succeed, 100% chance of success. 
-Click on the button and here we go:
+### Click on the button and here we go:
 
 {% include quotes_generator_final.html %}
 
