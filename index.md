@@ -100,8 +100,30 @@ It is also interesting the distribution of topics among famous speakers, we took
 
 {% include topic_analysis_DT_PF.html %}
 
+We also analyzed if a quote mentioned a place, a person, a work of art, an organization etc and see if it affected its number of citations (the legend is below the graph if not clear):
 
 {% include theme_analysis.html %}
+
+The key is the following:
+PERSON People, including fictional.\
+NORP Nationalities or religious or political groups.\
+FAC Buildings, airports, highways, bridges, etc.\
+ORG Companies, agencies, institutions, etc.\
+GPE Countries, cities, states.\
+LOC Non-GPE locations, mountain ranges, bodies of water.\
+PRODUCT Objects, vehicles, foods, etc. (Not services.)\
+EVENT Named hurricanes, battles, wars, sports events, etc.\
+WORK_OF_ART Titles of books, songs, etc.\
+LAW Named documents made into laws.\
+LANGUAGE Any named language.\
+DATE Absolute or relative dates or periods.\
+TIME Times smaller than a day.\
+PERCENT Percentage, including "%".\
+MONEY Monetary values, including unit.\
+QUANTITY Measurements, as of weight or distance.\
+ORDINAL "first", "second", etc.\
+CARDINAL Numerals that do not fall under another type
+
 
 ## How to be a mainstream famous quote emitter:
 
@@ -114,7 +136,7 @@ Now let's take a look at the combinations that yield non-famous quotes:
 
 {% include nonfamous_combinations.html %}
 
-Ok so it looks like european politicians that talk about sports are not really popular...
+Ok so it looks like **european athletes that talk about sports** are not really popular... Just stop doing sports, move to USA and do politics if you want to be famous.
 Now that we have a better overview of the profile of speakers behind famous quotes, we can take a closer look at the quotes.
 
 ## Is the word 'platypus' often used in famous sentences?
@@ -134,7 +156,7 @@ We also considered several additional parameters such as:
 * Named Entity Recognition [(NER)](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da) to identify the number of times a quote mentions a date, a person, an organization, an event, a language, etc.
 * Complexity score using [Gunning Fog rating](https://en.wikipedia.org/wiki/Gunning_fog_index)
 
-We chose only to present the most interesting results in this article but you can go and check on our [Github] for more about the methods and results: https://github.com/epfl-ada/ada-2021-project-aficionada
+We chose only to present the most interesting results in this article but you can go and check on our Github for more about the methods and results: https://github.com/epfl-ada/ada-2021-project-aficionada
 
 Here are the main info about famous and not famous quotes:
 * 50% of the famous quote have at least 13 words compared to 20 for non famous -> non-famous quotes tend to be longer
@@ -142,7 +164,9 @@ Here are the main info about famous and not famous quotes:
 * 50% of the famous quote have at least a subjectivity of 0.35 (quite factual) compared to 0.41 (quite factual) for non-famous -> no difference
 * 50% of the famous quote have at least a Gunning Fog complexity score of 16 (quite complicated) compared to 14 (quite complicated) for non-famous -> no difference
 
-## And what does machine learning think about it?**
+As you can see, the secret behind famous quotes doesn't really seem to rely on syntax, complexity or sentiment.
+
+## And what does machine learning think about it?
 
 Now let's check if your intuitions were correct. Have you heard about Machine Learning (ML for close friends)? Anyway don't worry this is not time and place to discuss stochastic gradient descent algorithms.
 The only thing you need to know is that we created ML models that given an unseen quote, can predict if the quote will be famous or not. We trained a Random Forest and Logistic Regression models (don't worry about the names). And our model predicted the fame of new quotes with an accuracy of 74 %! That is to say it could tell in 74% of cases if a quote was famous or not. Here below, you can see which coefficients and their associated feature contributes the most to the prediction.
