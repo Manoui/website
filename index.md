@@ -66,8 +66,9 @@ You may already have realized that most of the quotations we collected from Quot
 
 {% include proportion_geo_famous.html %}
 
+Oups there seem to be a bias in our dataset... Indeed most of the english quotes are from North America or Europe, and little from Africa, South America, Asia and Australia. It seems that quotes that are mediatized in english news articles are mainly from U.S.A., Canada and Europe, which is not surprising. We thus need to be careful in any conclusion we draw from our analysis since they might not apply universally.
 
-### The bets are open
+### Take your bets!
                                                              
 Now it is your turn to take guesses on what makes the fame of a quote by selecting some parameters and seeing their distribution across famous and ‘non-famous’ quotes. You can see parameters at the speakers level, as well as at the quote level. Indeed, using [TextBlob](https://pypi.org/project/textblob/0.9.0/) a natural language processing (NLP) library we defined the polarity and subjectivity of a quote. Polarity scores were calculated on the quotes and range from -1 (negative) to 1 (positive), with 0 representing neutral quotes. Subjectivity scores range from 0 to 1 and we consider subjective quotes with a score above 0.5. 
 So, which individual features do you predict can differentiate famous from non-famous quotes?
