@@ -8,7 +8,7 @@ First, try to write something, we’ll tell you if your words will become famous
 "boo4"
 
 "booo"
-{% include bouton1.html %}
+{% include button_1.html %}
 
 Anyway, you better try our famous quote generator if you want to succeed, 100% chance of success. Click on the button and here we go:
 ** WIDGET (quote generator)**
