@@ -14,15 +14,15 @@
 <p style="color:white">saut de ligne</br></p>
 
      
-#### First, try to write something, we’ll tell you if your words have a chance to become famous (max 140 characters):</u>
+### First, try to write something, we’ll tell you if your words have a chance to become famous (max 140 characters):</u>
 {% include button_1.html %}
 
-#### Anyway, you better try our **famous quote generator** if you want to succeed, 100% chance of success. 
+### Anyway, you better try our **famous quote generator** if you want to succeed, 100% chance of success. 
 Click on the button and here we go:
 
 {% include quotes_generator_final.html %}
 
-#### **Inspiring no?** Post it right away on Twitter or Instagram and let the magic happen...
+### **Inspiring no?** Post it right away on Twitter or Instagram and let the magic happen...
 (What? nonsense you’re saying? I think that you are just not ready for that new vision on syntax)
 
 **While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous.**
