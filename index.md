@@ -149,11 +149,13 @@ Example of cool generated sentences:
 > 
 > ”In political history what important is that everybody work together to ensure to.”
 
-Wow some are very emotional and inspiring.
+Wow some are very powerful and inspiring.
 
 
 ### Conclusion
-The topic of a quote is of high importance, even more than the speaker's features or the characteristics of the sentence. Indeed, "Content is more than "subject matter. ' It is all the feelings and ideas you bring to your painting." - Rene Huyghe. The choice of words and the speaker are less important than the information it conveys. Didn't take into account intonation or speech context.
+We hope you enjoyed your time on this website. As could see, the topic of a quote is more important than the speaker's features or the syntax of a sentence. Indeed, "Content is more than "subject matter. ' It is all the feelings and ideas you bring to your painting." - Rene Huyghe. The choice of words and the speaker seem less important than the information it conveys. However, as a good data scientist you must aknowledge the limitations of your analysis. First we saw that most of the quotes we have are from North America so the results are a bit biaised. Also we didn't take into account the intonation or speech context which might play an important role on how a quote is portrayed in the press. Anyway, quick go and check if your quote buzzed on the internet!
+
+**Thanks for reading! -The Aficionada Team**
 
 
 #### References
