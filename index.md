@@ -181,17 +181,16 @@ As you can see, the secret behind famous quotes doesn't really seem to rely on s
 
 ## And what does machine learning think about it?
 
-Now let's check if your intuitions were correct. Have you heard about Machine Learning (ML for close friends)? Anyway don't worry this is not time and place to discuss stochastic gradient descent algorithms.
-The only thing you need to know is that we created ML models that given an unseen quote, can predict if the quote will be famous or not. We trained a Random Forest and Logistic Regression models (don't worry about the names). And our model predicted the fame of new quotes with an accuracy of 74 %! That is to say it could tell in 74% of cases if a quote was famous or not. Here below, you can see which coefficients and their associated feature contributes the most to the prediction.
+Now let's check if your intuitions were correct. Have you already heard about Machine Learning (ML for close friends)? Anyway don't worry this is not time and place to discuss stochastic gradient descent algorithms ;)
+The only thing you need to know is that we created ML models that given an unseen quote, can predict if the quote will be famous or not. We trained a Logistic Regression model (don't panic if you never heard about it). And our model predicted the fame of new quotes with an accuracy of 73 %! That is to say it could tell in 73% of cases if a quote was famous or not. Here below, you can see which coefficients and their associated feature contribute the most to the prediction.
 
-This is for the firt Logistic Regression model:
+This is the coefficients we obtained for our Logistic Regression model:
 
 {% include logistic_regression_coefficients.html %}
 
-This is for the Random Forest model:
+Don't worry if you don't understand 100% this graph, the only thing you need to know is that features with positive coefficient values will augment the chance of a quote to be famous, whereas coefficient with negative values will lower the chance of a quote to be famous. For instance, having a negative connation job (such as pornographic actor) augments your chance of having a famous quote. Whereas coming from Asia really lower your chance for your quote to be famous... (in english newspaper at least).
 
-{% include rf_coefficients.html %}
-
+It is interesting that ML algorithms retrieve phenomenons we identified before and gives new ideas to design a more complex analysis.
 
 ## Famous quote generator:
 Some further explanation, about the quote generator you used at the top in case you are curious about it :)
