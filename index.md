@@ -1,5 +1,12 @@
 
 
+\
+\
+\
+\
+\
+
+
 # “Shoot for the moon. Even if you miss, you'll land among the stars.” Norman Vincent Peale
  
 Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to be **famous**? Then this website might help you!
@@ -76,17 +83,17 @@ Also, you may want to consider combining some features. What do you observe ?
 
 {% include gender_occupation.html %}
 
-Perhaps you are wondering, what are the quotes about? You may have already guessed that most famous quotations over time are related to politics, but justice also appears frequently, a bit less likely are arts and environment. Quotes were tagged using [Empath](https://arxiv.org/pdf/1602.06979.pdf), a tool that can generate and validate new lexical categories on demand from a small set of seed terms, which were manually defined based on Macmillan Thesaurus.
+Perhaps you are wondering, what are the quotes about? Let's take a look into the topic distribution over famous and non-famous quotes. Would you expect a difference in topics between famous and non-famous quotes? If yes which topics would be more or less prominent?
 
 {% include topic_timeseries.html %}
 
-Would you expect a difference in topics between famous and non-famous quotes? If yes which topics would be more or less prominent?
+You may have already guessed that most famous quotations over time are related to politics, but justice also appears frequently. Whereas arts and environment are a bit less likely (maybe consequence of a certain climatosceptic presisdent...?). Quotes were tagged using [Empath](https://arxiv.org/pdf/1602.06979.pdf), a tool that can generate and validate new lexical categories on demand from a small set of words, which were manually defined.
 
 <img src="images/topics_quotes.jpeg" width="600" height="300"> 
 
 Both types of quotes have a high percentage of quotes related to justice. Sports represents 21% of non-famous quotes, whereas it only makes up for 4.73% of famous quotes seems. Politics is in contrast twice much more present in famous quotes compared to non-famous.
 
-It is also interesting the distribution of topics among famous speakers.
+It is also interesting the distribution of topics among famous speakers, we took a look at the quotes from Trump and Pope Francis:
 
 <img src="images/example_topics.jpeg" width="600" height="300"> 
 
