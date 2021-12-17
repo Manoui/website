@@ -17,23 +17,21 @@ Anyway, you better try our famous quote generator if you want to succeed, 100% c
 
 Inspiring no? Post it right away on Twitter or Instagram and let the magic happen...
 (What? nonsense you’re saying? I think that you are just not ready for that new vision on syntax)
-  
+
 ** While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous. **
 
-<p float="left">
-  <img src="images/people_slogan.png" width="300" height="300">
-  <img src="images/brand_slogan.png" width="350" height="350"> 
-</p>
+Just think about politicians or advertisers that convinced you with just a few words, just by saying 'Yes we can!', 'Make America great again' or 'Logarithms are our friends'. This tiny little sentences made of 3 or 4 words have so much power when pronounced by Barack Obama, Donald Trump or Robert West that they are engraved forever in your mind. Not sure your colleague's remark in front of the coffee machine 'The weather is nice today.' will have as much impact on your brain...
+Why does these quotes are so powerful? Is it because of their speaker? Is it because of the quote in itself? 
+What makes that some quotes will be remembered forever and others will disappear into nothingness?
 
+That's what we wanted to investigate with our data story, in order to unravel the mystery behind famous quotes.
 
-I would bet these slogans ring a bell to you! Those quotes emitted by famous personalities remain in your mind and are cited over again, but why? What makes the fame of those quotes. This is the million-dollar question. 
+First, we tried to look into the soul of the quote to find an answer. For instance, does the grammatical syntax plays a role in the fame of words? 
+Or are negative quotes more famous than positive ones? Are some topics more trendy than others? Then, we tried to understand the impact of the speaker on
+his/her quote. Are the emitters of famous quote distributed equally across continents? Is the fact that the speaker is alive or dead when the quote is cited important?
+Are people related to sports more mediatized than artists? It is indeed of high interest for politicians, influencers or companies to generate the perfect quote that will catch people attention.
 
-"A brand is a voice and a product is a souvenir."- Lisa Gansky
-Consumers use products, but the brand is what speaks to them. One recent example is Dacia with its "Everybody drives a duster.", that advertisement for sure caught your attention, perhaps you even sang, as compared to other car advertisements that were left unnoticed. 
-
-Mediatized people often want to make the buzz, in order to create their own brand and remain famous. A president has also a slogan during their campaign, and it should be short, appealing, and stick in your head. It is of high interest to generate a famous that will be cited multiple times.
-
-So what makes the fame of a quote? Does it depend on the speaker, on the content, or on the length of a quote? Through this website, you will fit the shoes of a data analysist to discover what parameters define the fame of a quote.
+So while you have the time before the celebrity tornado sweeps you away, slip into the shoes of a data analysist to discover what impacts the fame of a quote!
 
 
 ## Data
