@@ -36,7 +36,7 @@
 
 ### Anyway, you better try our **famous quote generator** if you want to succeed
 <p style="text-align:center">
-   <font size="4" id="lien">
+   <font size="5" id="lien">
      <b>Click on the button and here we go:</b>
    </font>
 </p>
@@ -48,7 +48,7 @@
 (What? The syntax isn't right? ? Maybe our generator needs a little bit more training)
 
 <p style="text-align:center">
-   <font size="4" id="lien">
+   <font size="5" id="lien">
      <b>While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous.</b>
    </font>
 </p>
