@@ -10,7 +10,7 @@
 
 </p>
 
-<p style="color:white">ada</p>
+<p style="color:white">ada</br></p>
 
      
 <u>First, try to write something, we’ll tell you if your words have a chance to become famous:</u>
