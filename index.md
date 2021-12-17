@@ -5,7 +5,7 @@
 <div id="just-line-break"></div>
 <div id="just-line-break"></div>
 
-<p style="color:white">saut de ligne</br></p>
+<p style="color:white">saut de ligne</p>
 
 <p style="text-align:center">
    <font size="6" id="lien">
