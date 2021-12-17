@@ -14,7 +14,7 @@
 
 <p style="text-align:center">
    <font size="6" id="lien">
-     <i><b>Did you ever dream of your words like the ones of Shakespeare, Einstein, or Trump remaining forever etched in the memory of humanity ? Would you like to be famous ? Then this website might help you !</b></i>
+     <b>Did you ever dream of your words like the ones of Shakespeare, Einstein, or Trump remaining forever etched in the memory of humanity ? Would you like to be famous ? Then this website might help you !</b>
    </font>
 
 </p>
