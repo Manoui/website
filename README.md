@@ -24,7 +24,7 @@ Then, multivariate data analysis followed to understand the relation between the
 ### Dataset enrichment
 In order to enrich our dataset with new features, we needed to compute them using available methods. The first thing we extracted was the number of words and characters in a quote. Then, some NLP methods allowed us to extract for instance the polarity and subjectivity of a quote, that is to say, its sentiment. We also computed the complexity of a sentence using the Gunning Fog score. Using Spacy, we identified the grammatical content of a sentence, that is to say, the number of NOUNS, VERBS, ADJECTIVES, etc. Entities present in the quote such as PERSON, PLACE, ORGANIZATION were also counted.
 
-We tried to retrieve the topic of a quote in order to see if a specific theme is more plebiscite than others. The most promising way to do so is by using topic modelling. We decided to use a text analysis tool named Empath, which was the most promising kind of analysis regarding the quotations.  First, it allows us to create the topic categories we think relevent for our analysis. To create such categories, we insert a few seed terms, related terms to the topic name. Those terms were subjectively picked using the Macmillan Thesaurus. After, we processing the quotation with nlp, we could have extracted the main topic of each quotation. Empath analysis returns us probability for each category, then we extracted the most likelihood category and define it as the main topic. Many quotations were not labelled with a topic (around 70%). Indeed, many quotations are short and composed of words not direclty related to a specific topic like stopwords. Even when we red the quotations it was hard to specify a topic because it missed the context of the quotation. We were pretty satisfied that the topic analysis shown us that most of Pope Francis quotations were related to religion and most of Donald Trump quotations were related to justice and politics, which makes definitively sense.
+We tried to retrieve the topic of a quote in order to see if a specific theme is more plebiscite than others. We decided to use a text analysis tool named Empath, which was the most promising kind of analysis regarding the quotations.  It allowed us to create the topic categories we think relevant for our analysis. To create such categories, we insert a few seed terms, wich are related words to the topic name. Those terms were manually picked using the Macmillan Thesaurus. Empath analysis returns the for a quote to be in a category, the most likely was defined as the main topic of the quote. Unfortunatly, many quotations were not labelled with a topic (around 70%). Indeed, many quotations are short and composed of words that are not direclty related to a specific topic like stopwords ('and','the'). Even when we manually read the quotation it was hard to specify a topic because it missed the context. We were pretty satisfied that the topic analysis shown us that most of Pope Francis quotations were related to religion and most of Donald Trump quotations were related to justice and politics, which seems coherent.
 
 Considering now the speaker emitting the quote, we could not properly account for the differences in fame of all the speaker. Therefore, we filter only for quotes from famous people (as defined by the [Pantheon database](https://doi.org/10.7910/DVN/28201) to analyze what makes the fame of a quote. The Pantheon dataset was generated on the basis of Wikipedia bibliographies views, the number of different Wikipedia languages, the coefficient of variation etc. and it combines those values in a single metric, the historical popularity index (HPI). The HPI score will also be included as a feature to account for the remaining differences in speaker's fame. Moreover, this filtering step on famous speakers also allows to remove 'missense' quotes (not emitted by speakers, bur rather text passages wrongly interpreted as a quote). We also considered some additional features about the speaker, its continent of origin, its occupation, its gender, and  whether he was alive at the date at which the quote was emitted.
 
@@ -32,9 +32,7 @@ It allows us to generate new features to complete our dataset and better charact
 
 
 ### Supervised Learning
-We wanted to try different supervised learning ML models on the dataset, like random forest, CNN, or logistic regression to predict using the available features if a given quote is famous or not. The idea was to test different models and assess their performance using adequate metrics like accuracy, precision, and recall. Before training our models on the dataset, we wanted to explore how to enrich the features with more covariates since some models perform better with more variables.
-
-Libraries to use: Sklearn (random forest and logistic regression), Keras (CNN)
+We wanted to try different supervised learning ML models on the dataset, like random forest, logistic regression and K-NN models to predict using the available features if a given quote is famous or not. The idea was to test different models and assess their performance using adequate metrics like accuracy, precision, and recall. Before training our models on the dataset enriched the features with more covariates since some models perform better with more variables. You can find the methods and results in the M3 notebook.
 
 ### Unsupervised Learning
 We tried different methods on unsupervised learning like k-NN or DBSCAN clustering, or KPrototypes for clustering with categorical and numerical features, or even KModes considering only categorical features. But the results weren't conclusive so we didn't continue trying to identify clusters in our data.
@@ -49,9 +47,9 @@ The sentences generated are not too bad considering the small dataset and the si
 "These murderous attacks have once again showed us the total hatred of humanity.” This one could definitely become a famous quote.
 
 # Task
-* Manon: preprocessing, supervised learning, univariate data analysis, plotting
-* Pauline: speaker features, supervised learning, website
-* Elodie: feature enrichment using NLP, generation of embeddings, quote generator
+* Manon: preprocessing, supervised learning, univariate data analysis, plotting, website
+* Pauline: speaker features, supervised learning, plotting, website
+* Elodie: feature enrichment using NLP, generation of embeddings, quote generator, website
 * Oihana: topic extraction, figures, notebook
 
 # What did we learn?
