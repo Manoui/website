@@ -4,17 +4,19 @@
 /
 /
 /
-
+/
 
 <p style="text-align:center">
    <font size="5" id="lien">
-     <i>Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to befamous? Then this website might help you!</i>
+     <i>Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity ? Would you like to befamous ? Then this website might help you !</i>
    </font>
 
 </p>
 
 
 
+/
+/
 <u>First, try to write something, we’ll tell you if your words have a chance to become famous:</u>
 {% include button_1.html %}
 
