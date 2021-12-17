@@ -9,6 +9,7 @@
 <br/>
 
 <div id="line-break-and-tab"></div>
+<div id="line-break-and-tab"></div>
 
 
 <p style="text-align:center">
@@ -19,7 +20,11 @@
 
 </p>
 
+<div id="line-break-and-tab"></div>
+
 ***
+
+<div id="line-break-and-tab"></div>
 
      
 ### First, try to write something, we’ll tell you if your words have a chance to become famous (max 140 characters):
