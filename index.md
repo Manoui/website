@@ -34,18 +34,19 @@ Are people related to sports more mediatized than artists? It is indeed of high 
 So while you have the time before the celebrity tornado sweeps you away, slip into the shoes of a data analysist to discover what impacts the fame of a quote!
 
 
-## Data
+## Say Hi to the dataset: Quotebank
 
-The data at our disposition was the corpus of Quotebank containing citations extracted from newspapers over the years 2008 to 2020. If you are interested in the methods used to extract quotes and attribute them to speakers, have a look at the [paper](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf). You can also use this related [tool](https://quotebank.dlab.tools) that allows you to enter a keyword and it will search the database for related quotes and show you its occurrence over time.
+The data used in this analysis is Quotebank, a corpus containing citations extracted from newspapers over the years 2008 to 2020. If you are interested in the methods used to extract quotes and attribute them to speakers, have a look at the [paper](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf). You can also use this related [tool](https://quotebank.dlab.tools) that allows you to enter a keyword and it will search the database for related quotes and show you its occurrence over time.
 
-Using this set of quotes (2015-2020), we selected only the 1% of the most famous quotes with more than 215 occurrences, and also sampled randomly quotes with less than 10 occurrences to be considered as non-famous. With this set of quotes we aim at analyzing what makes a quote famous or what makes it fall into neglect. In order to be able to compare those sets on quotes features (the polarity,the complexity of a sentence, etc.) and speakers features (occupation, nationality etc.), we decided to remove quotes without attributed speaker and keep only famous speakers. This avoids artifacts of quotes being often cited because of differences in fame among speakers that we cannot account for. Therefore, we selected famous and non-famous quotes from speakers appearing in the [Pantheon database](Yu, A. Z., et al. (2016). Pantheon 1.0, a manually verified dataset of globally famous biographies. Scientific Data 2:150075. doi: 10.1038/sdata.2015.75)). It was generated on the basis of Wikipedia bibliographies views, the number of different Wikipedia languages, the coefficient of variation etc. and it combines those values in a single metric, the historical popularity index (HPI).
+Using this set of quotes (2015-2020), we selected only the 1% most famous quotes with more than 215 occurrences in newspapers, and also sampled random quotes with less than 10 occurrences to be considered as non-famous. With this set of quotes we aim at analyzing what makes a quote famous or what makes it fall into the abyss of oblivion. In order to avoid artifacts of quotes being often cited because of differences in fame among speakers we selected famous and non-famous quotes from speakers appearing in the [Pantheon database](Yu, A. Z., et al. (2016). Pantheon 1.0, a manually verified dataset of globally famous biographies. Scientific Data 2:150075. doi: 10.1038/sdata.2015.75)). It was generated on the basis of Wikipedia bibliographies views, the number of different Wikipedia languages, the coefficient of variation etc. and it combines those values in a single metric, the historical popularity index (HPI).
 
-So, let us now dive into the data and see if we can figure out what contributes to a quote being cited several times.
+OK enough with the boring pre-processing steps (crucial in data science tho).
+Now let us dive into the data and see if we can answer our existential question.
 
 
-### What are the trends?
+### Who are the most cited people on this planet?
 
-First, you can have a glimpse at the number of different quotes emitted by the top 20 of people emitting the most famous quotes over time, as well as the quote with the most occurrences.
+First, you can take a look at the top 20 of people emitting the most famous quotes, along with their number of cited quotes and THE quote with the most occurrences.
 
 {% include famous_speakers.html %}
 
