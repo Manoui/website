@@ -1,11 +1,11 @@
-/
-<br>
+<div id="just-line-break"></div>
+<div id="just-line-break"></div>
+<div id="just-line-break"></div>
 
-\n
 <p style="color:white">saut de ligne</br></p>
 
 <p style="text-align:center">
-   <font size="7" id="lien">
+   <font size="6" id="lien">
      <i><b>Did you ever dream of your words like the ones of Shakespeare, Einstein, or Trump remaining forever etched in the memory of humanity ? Would you like to be famous ? Then this website might help you !</b></i>
    </font>
 
