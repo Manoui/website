@@ -33,10 +33,27 @@
 
 					<section class="box special">
 						<header class="major">
-							<title>CSS test</title>
-        						<style type="text/css">
-           						 p { Word-spacing: 40px; }
-       							 </style>
+						  var letexte = 'Shoot for the moon. Even if you miss, you will land among the stars. Norman Vincent Peale';
+						   var montimer;
+						   var cmpt = 0;
+
+						   function typewriter(){
+						      lelien = document.getElementById('lien');
+						      if(cmpt < letexte.length){
+							 courant = lelien.innerHTML.substring(0, lelien.innerHTML.length -1);
+							 courant += letexte.charAt(cmpt)+"_";
+							 lelien.innerHTML = courant;
+						      }
+						      cmpt++;
+						      setTimeout("typewriter()",100);
+						   }
+						   window.onload = function(){
+						      typewriter();
+						   }
+						</script>
+
+
+						<a href="#" id="lien" style="text-decoration: none;color:black"></a>
 							
 						</header>
 						<p> {{ content }} </p>
