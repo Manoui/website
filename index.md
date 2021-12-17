@@ -23,7 +23,7 @@ Click on the button and here we go:
 {% include quotes_generator_final.html %}
 
 ### **Inspiring no?** Post it right away on Twitter or Instagram and let the magic happen...
-(What? nonsense you’re saying? I think that you are just not ready for that new vision on syntax)
+(It doesn’t seem right to you ? Maybe our generator needs a little bit more training.)
 
 **While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous.**
 
