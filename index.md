@@ -130,11 +130,11 @@ We also considered several additional parameters such as:
 * The length of a quote (the number of words, and characters)
 * Whether a speaker was alive at the date of the citation.
 * The historical popularity index (HPI) of a speaker.
-* Grammatical features based on [Part-of-speech tags](https://spacy.io/usage/linguistic-features#pos-tagging) to quantify the number of adverbs, nouns, etc. that a quote contains. This allowed attributing a complexity score to the quotation.
+* Grammatical features based on [Part-of-speech tags](https://spacy.io/usage/linguistic-features#pos-tagging) to quantify the number of adverbs, nouns, etc. that a quote contains. 
 * Named Entity Recognition [(NER)](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da) to identify the number of times a quote mentions a date, a person, an organization, an event, a language, etc.
 * Complexity score using [Gunning Fog rating](https://en.wikipedia.org/wiki/Gunning_fog_index)
 
-We chose only to present the most interesting results in this article but you can go and check on our Github for more about the methods and results:
+We chose only to present the most interesting results in this article but you can go and check on our [Github] for more about the methods and results: https://github.com/epfl-ada/ada-2021-project-aficionada
 
 Here are the main info about famous and not famous quotes:
 * 50% of the famous quote have at least 13 words compared to 20 for non famous -> non-famous quotes tend to be longer
