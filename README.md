@@ -41,6 +41,9 @@ We tried different methods on unsupervised learning like k-NN or DBSCAN clusteri
 ### Sentence embeddings
 We generated embeddings of the quotes using the BERT model. This word representation allows detecting sentences that are closer in the embedding space and thus might reveal interesting patterns. Using PCA, we tried to visualize clustering by keeping 2 principal components. Unfortunalty we didn't observe any clustering between the famous and not famous quotes so we left the embeddings aside for the final analysis.
 
+### Conclusion
+There are so limitations of our analysis. First, we saw that most of the quotes we have are from North America so the results are a bit biased. Also, we didn't take into account the intonation or speech context which might play an important role in how a quote is portrayed in the press.
+
 ### Text generation
 The last step of the project was to build a 'famous quote generator' that learns how to generate a 'famous' quote that we can use to be famous thanks to ADA. We selected a corpus of the 1000 most famous quotes across years, ranging from 98263 to 1028 occurrences. The text was preprocessed in order to remove punctuation and numbers as well as multiple spacing. An LSTM model was created and trained on 100 epoch using this corpus. The output of the model is the probability of the next word in the sequence. Once the model was trained, we generated new sentences using a random seed of 4 words and limiting its length to 13 words since it is the median length of famous quotes.
 
