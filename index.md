@@ -184,13 +184,13 @@ As you can see, the secret behind famous quotes doesn't really seem to rely on s
 Now let's check if your intuitions were correct. Have you already heard about Machine Learning (ML for close friends)? Anyway don't worry this is not time and place to discuss stochastic gradient descent algorithms ;)
 The only thing you need to know is that we created ML models that given an unseen quote, can predict if the quote will be famous or not. We trained a Logistic Regression model (don't panic if you never heard about it). And our model predicted the fame of new quotes with an accuracy of 73 %! That is to say it could tell in 73% of cases if a quote was famous or not. Here below, you can see which coefficients and their associated feature contribute the most to the prediction.
 
-This is the coefficients we obtained for our Logistic Regression model:
+In the graph below, this is the coefficients we obtained for our Logistic Regression model. Don't worry if you don't understand 100% this graph, the only thing you need to know is that features with positive coefficient values will augment the chance of a quote to be famous, whereas coefficient with negative values will lower the chance of a quote to be famous. Values close to zero means the feature doesn't really have an impact to predict if a quote is famous or not.
 
 {% include logistic_regression_coefficients.html %}
 
-Don't worry if you don't understand 100% this graph, the only thing you need to know is that features with positive coefficient values will augment the chance of a quote to be famous, whereas coefficient with negative values will lower the chance of a quote to be famous. For instance, having a negative connation job (such as pornographic actor) augments your chance of having a famous quote. Whereas coming from Asia really lower your chance for your quote to be famous... (in english newspaper at least).
+For instance, being a politician augments your chance of having a famous quote, which confirms what we saw previously. Whereas coming from Asia really lower your chance for your quote to be famous... (in english newspaper at least). The number of characters doesn't seem to impact the prediction of our model.
 
-It is interesting that ML algorithms retrieve phenomenons we identified before and gives new ideas to design a more complex analysis.
+It is interesting to see that ML algorithms retrieve phenomenons we identified before, it also gives new ideas to design a more complex analysis.
 
 ## Famous quote generator:
 Some further explanation, about the quote generator you used at the top in case you are curious about it :)
@@ -214,11 +214,11 @@ Wow some are very powerful and inspiring.
 
 
 ### Conclusion
-We hope you enjoyed your time on this website. As could see, the topic of a quote is more important than the speaker's features or the syntax of a sentence. Indeed, "Content is more than "subject matter. ' It is all the feelings and ideas you bring to your painting." - Rene Huyghe. The choice of words and the speaker seem less important than the information it conveys. However, as a good data scientist you must aknowledge the limitations of your analysis. First we saw that most of the quotes we have are from North America so the results are a bit biaised. Also we didn't take into account the intonation or speech context which might play an important role on how a quote is portrayed in the press. Anyway, quick go and check if your quote buzzed on the internet!
+We hope you enjoyed your time on this website. We saw that the syntax and sentiment of a quote is not that important in making it famous or not. Most of the emitters of famous quotes are politicians, but it is not surpising because they are highly mediatized in the newspapers. Maybe they have a special talent with words? However, as a good data scientist you must aknowledge the limitations of your analysis. First we saw that most of the quotes we have are from North America so the results are a bit biaised. Also we didn't take into account the intonation or speech context which might play an important role on how a quote is portrayed in the press. Anyway, quick go and check if your quote buzzed on the internet!
 
 <p style="text-align:center">
    <font size="5" id="lien">
-     <i>Thanks for reading! We shot for the moon and landed in the stars...</br> -The Aficionada Team-</i>
+     <i>Thanks for reading! We shot for the moon and landed in the stars...<br> -The Aficionada Team-</i>
    </font>
 
 </p>
