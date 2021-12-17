@@ -6,7 +6,7 @@
 
 <p style="text-align:center">
    <font size="5" id="lien">
-     <i>Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity ? Would you like to befamous ? Then this website might help you !</i>
+     <i>Did you ever dream of your words like the ones of Shakespeare, Einstein, or Trump remaining forever etched in the memory of humanity ? Would you like to be famous ? Then this website might help you !</i>
    </font>
 
 </p>
@@ -14,7 +14,7 @@
 <p style="color:white">saut de ligne</br></p>
 
      
-### First, try to write something, we’ll tell you if your words have a chance to become famous (max 140 characters):</u>
+### First, try to write something, we’ll tell you if your words have a chance to become famous (max 140 characters):
 {% include button_1.html %}
 
 ### Anyway, you better try our **famous quote generator** if you want to succeed, 100% chance of success. 
@@ -27,16 +27,16 @@ Click on the button and here we go:
 
 **While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous.**
 
-Just think about politicians or advertisers that convinced you with just a few words, just by saying 'Yes we can!', 'Make America great again' or 'Logarithms are our friends'. This tiny little sentences made of 3 or 4 words have so much power when pronounced by Barack Obama, Donald Trump or Robert West that they are engraved forever in your mind. Not sure your colleague's remark in front of the coffee machine 'The weather is nice today.' will have as much impact on your brain...
-Why does these quotes are so powerful? Is it because of their speaker? Is it because of the quote in itself? 
+Just think about politicians or advertisers that convinced you with just a few words, just by saying 'Yes we can!', 'Make America great again' or 'Logarithms are our friends'. These tiny little sentences made of 3 or 4 words have so much power when pronounced by Barack Obama, Donald Trump, or Robert West that they are engraved forever in your mind. Not sure your colleague's remark in front of the coffee machine 'The weather is nice today.' will have as much impact on your brain...
+Why do these quotes are so powerful? Is it because of their speaker? Is it because of the quote in itself? 
 What makes that some quotes will be remembered forever and others will disappear into nothingness?
 
 That's what we wanted to investigate with our data story, in order to unravel the mystery behind famous quotes.
 
-First, we tried to look into the soul of the quote to find an answer. For instance, does the grammatical syntax plays a role in the fame of words? 
+First, we tried to look into the soul of the quote to find an answer. For instance, does grammatical syntax play a role in the fame of words? 
 Or are negative quotes more famous than positive ones? Are some topics more trendy than others? Then, we tried to understand the impact of the speaker on
-his/her quote. Are the emitters of famous quote distributed equally across continents? Is the fact that the speaker is alive or dead when the quote is cited important?
-Are people related to sports more mediatized than artists? It is indeed of high interest for politicians, influencers or companies to generate the perfect quote that will catch people attention.
+his/her quote. Are the emitters of famous quotes distributed equally across continents? Is the fact that the speaker is alive or dead when the quote is cited important?
+Are people related to sports more mediatized than artists? It is indeed of high interest for politicians, influencers, or companies to generate the perfect quote that will catch people's attention.
 
 **So while you have the time before the celebrity tornado sweeps you away, slip into the shoes of a data analysist to discover what impacts the fame of a quote!**
 
@@ -45,7 +45,7 @@ Are people related to sports more mediatized than artists? It is indeed of high 
 
 The data used in this analysis is Quotebank, a corpus containing citations extracted from newspapers over the years 2008 to 2020. If you are interested in the methods used to extract quotes and attribute them to speakers, have a look at the [paper](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf). You can also use this related [tool](https://quotebank.dlab.tools) that allows you to enter a keyword and it will search the database for related quotes and show you its occurrence over time.
 
-Using this set of quotes (2015-2020), we selected only the 1% most famous quotes with more than 215 occurrences in newspapers, and also sampled random quotes with less than 10 occurrences to be considered as non-famous. With this set of quotes we aim at analyzing what makes a quote famous or what makes it fall into the abyss of oblivion. In order to avoid artifacts of quotes being often cited because of differences in fame among speakers we selected famous and non-famous quotes from speakers appearing in the [Pantheon database](Yu, A. Z., et al. (2016). Pantheon 1.0, a manually verified dataset of globally famous biographies. Scientific Data 2:150075. doi: 10.1038/sdata.2015.75)). It was generated on the basis of Wikipedia bibliographies views, the number of different Wikipedia languages, the coefficient of variation etc. and it combines those values in a single metric, the historical popularity index (HPI).
+Using this set of quotes (2015-2020), we selected only the 1% most famous quotes with more than 215 occurrences in newspapers, and also sampled random quotes with less than 10 occurrences to be considered as non-famous. With this set of quotes, we aim at analyzing what makes a quote famous or what makes it fall into the abyss of oblivion. In order to avoid artifacts of quotes being often cited because of differences in fame among speakers we selected famous and non-famous quotes from speakers appearing in the [Pantheon database](Yu, A. Z., et al. (2016). Pantheon 1.0, a manually verified dataset of globally famous biographies. Scientific Data 2:150075. doi: 10.1038/sdata.2015.75)). It was generated on the basis of Wikipedia bibliographies views, the number of different Wikipedia languages, the coefficient of variation etc. and it combines those values in a single metric, the historical popularity index (HPI).
 
 OK enough with the boring pre-processing steps (crucial in data science tho).
 Now let us dive into the data and see if we can answer our existential question.
@@ -64,7 +64,7 @@ Let's look now at the dynamics over time. The figure below shows the number of f
 {% include famous_speakers_timeseries.html %}
 
 It is very interesting to see the different peaks and how they relate to highly mediatized events in English newspapers. 
-* The peak in September 2016 of Donald Trump is during his presidential campaign were he “unleashes a blizzard of falsehoods, exaggerations and outright lies in the general election, peppering his speeches, interviews and Twitter posts with untruths so frequent that they can seem flighty or random — even compulsive.” 
+* The peak in September 2016 of Donald Trump is during his presidential campaign where he “unleashes a blizzard of falsehoods, exaggerations and outright lies in the general election, peppering his speeches, interviews and Twitter posts with untruths so frequent that they can seem flighty or random — even compulsive.” 
 * The peak of quotations in June 2017 of James Comey, former FBI director, coincides with its testimony after being fired by Donald Trump, and with Jeff Sessions peak, who originally recommended Trump about this firing. 
 * Pope Francis visits Washington and New York City on the 24th of September 2015, which explains the quotations in newspapers, and on February 2016 he pronounces a powerful sentence about the American President “A person who thinks only about building walls -- wherever they may be -- and not building bridges, is not Christian ... ”
 * The peak in April 2018 of Emmanuel Macron correspond to his speech to the Congress of the United States of America. 
@@ -73,7 +73,7 @@ You may already have realized that most of the quotations we collected from Quot
 
 {% include proportion_geo_famous.html %}
 
-Oups there seem to be a bias in our dataset... Indeed most of the english quotes are from North America or Europe, and little from Africa, South America, Asia and Australia. It seems that quotes that are mediatized in english news articles are mainly from U.S.A., Canada and Europe, which is not surprising. We thus need to be careful in any conclusion we draw from our analysis since they might not apply universally.
+Oups there seem to be a bias in our dataset... Indeed most of the English quotes are from North America or Europe, and little from Africa, South America, Asia and Australia. It seems that quotes that are mediatized in English news articles are mainly from U.S.A., Canada and Europe, which is not surprising. We thus need to be careful in any conclusion we draw from our analysis since they might not apply universally.
 
 ## Take your bets!
                                                              
@@ -95,13 +95,13 @@ Also, you may want to consider combining some features. What do you observe ?
 
 {% include gender_occupation.html %}
 
-We see that for both genders politicians are the most represented in the famous quotes. But we can see that there is a higher proportion of women in MEDIA_ARTS who are quoted than men. We can observe the inverse effect for SPORTS, where men quotes are more represented. In general, non-famous quotes have a better coverage of all topics whereas famous quotes are centered around politics, media arts and sports.
+We see that for both genders politicians are the most represented in the famous quotes. But we can see that there is a higher proportion of women in MEDIA_ARTS who are quoted than men. We can observe the inverse effect for SPORTS, where men quotes are more represented. In general, non-famous quotes have better coverage of all topics whereas famous quotes are centered around politics, media arts and sports.
 
 Perhaps you are wondering, what are these quotes about? Maybe that's what makes them famous! Let's take a look into the topic distribution over famous and non-famous quotes. Would you expect a difference in topics between famous and non-famous quotes? If yes which topics would be more or less prominent?
 
 {% include topic_timeseries.html %}
 
-You may have already guessed that most famous quotations over time are related to justice and politics. Whereas arts and environment are a bit less likely (maybe consequence of a certain climatosceptic president...?). Quotes were tagged using [Empath](https://arxiv.org/pdf/1602.06979.pdf) and generating manually lexical fields for topics.
+You may have already guessed that most famous quotations over time are related to justice and politics. Whereas arts and environment are a bit less likely (maybe the consequence of a certain climate sceptic president...?). Quotes were tagged using [Empath](https://arxiv.org/pdf/1602.06979.pdf) and generating manually lexical fields for topics.
 
 {% include topic_analysis.html %}
 
@@ -136,11 +136,11 @@ The key is the following:
 * CARDINAL: Numerals that do not fall under another type
 * NONE: no entity detected
 
-As you can see, making reference to one of the entity mentioned aboved doesn't seem to play a role in the fame of a quote. The distribution is more or less the same between famous and non-famous quotes so we better look somewhere else...
+As you can see, making reference to one of the entities mentioned above doesn't seem to play a role in the fame of a quote. The distribution is more or less the same between famous and non-famous quotes so we better look somewhere else...
 
 ## How to be a mainstream famous quote emitter:
 
-You may have already developed an intuition that most famous quotes are emitted by politicians in North America, covering mostly politics or justice. Let's see what combinations of the previously seen parameters seem to be the most successful when it comes to have a famous quote:
+You may have already developed an intuition that most famous quotes are emitted by politicians in North America, covering mostly politics or justice. Let's see what combinations of the previously seen parameters seem to be the most successful when it comes to having a famous quote:
 
 {% include famous_combinations.html %}
 
@@ -149,7 +149,7 @@ Now let's take a look at the combinations that yield non-famous quotes:
 
 {% include nonfamous_combinations.html %}
 
-Ok so it looks like **european athletes that talk about sports** are not really popular... Just stop doing sports, move to USA and do politics if you want to be famous.
+Ok so it looks like **European athletes that talk about sports** are not really popular... Just stop doing sports, move to USA and do politics if you want to be famous.
 Now that we have a better overview of the profile of speakers behind famous quotes, we can take a closer look at the quotes.
 
 ## Is the word 'platypus' often used in famous sentences?
@@ -181,21 +181,21 @@ As you can see, the secret behind famous quotes doesn't really seem to rely on s
 
 ## And what does machine learning think about it?
 
-Now let's check if your intuitions were correct. Have you already heard about Machine Learning (ML for close friends)? Anyway don't worry this is not time and place to discuss stochastic gradient descent algorithms ;)
-The only thing you need to know is that we created ML models that given an unseen quote, can predict if the quote will be famous or not. We trained a Logistic Regression model (don't panic if you never heard about it). And our model predicted the fame of new quotes with an accuracy of 73 %! That is to say it could tell in 73% of cases if a quote was famous or not. Here below, you can see which coefficients and their associated feature contribute the most to the prediction.
+Now let's check if your intuitions were correct. Have you already heard about Machine Learning (ML for close friends)? Anyway, don't worry this is not the time and place to discuss stochastic gradient descent algorithms ;)
+The only thing you need to know is that we created ML models that given an unseen quote, can predict if the quote will be famous or not. We trained a Logistic Regression model (don't panic if you never heard about it). And our model predicted the fame of new quotes with an accuracy of 73 %! That is to say, it could tell in 73% of cases if a quote was famous or not. Here below, you can see which coefficients and their associated feature contribute the most to the prediction.
 
-In the graph below, this is the coefficients we obtained for our Logistic Regression model. Don't worry if you don't understand 100% this graph, the only thing you need to know is that features with positive coefficient values will augment the chance of a quote to be famous, whereas coefficient with negative values will lower the chance of a quote to be famous. Values close to zero means the feature doesn't really have an impact to predict if a quote is famous or not.
+In the graph below, these are the coefficients we obtained for our Logistic Regression model. Don't worry if you don't understand 100% this graph, the only thing you need to know is that features with positive coefficient values will augment the chance of a quote being famous, whereas coefficient with negative values will lower the chance of a quote to be famous. Values close to zero means the feature doesn't really have an impact to predict if a quote is famous or not.
 
 {% include logistic_regression_coefficients.html %}
 
-For instance, being a politician augments your chance of having a famous quote, which confirms what we saw previously. Whereas coming from Asia really lower your chance for your quote to be famous... (in english newspaper at least). The number of characters doesn't seem to impact the prediction of our model.
+For instance, being a politician augments your chance of having a famous quote, which confirms what we saw previously. Whereas coming from Asia really lowers your chance for your quote to be famous... (in English newspaper at least). The number of characters doesn't seem to impact the prediction of our model.
 
 It is interesting to see that ML algorithms retrieve phenomenons we identified before, it also gives new ideas to design a more complex analysis.
 
 ## Famous quote generator:
 Some further explanation, about the quote generator you used at the top in case you are curious about it :)
 
-We selected a corpus of the 1000 most famous quotes across years, ranging from 98263 to 1028 occurrences in newspapers. The text was preprocessed in order to remove punctuation and numbers as well as multiple spacing. We trained a model (ML again!!!) on this corpus that learned the syntax and vocabulary of this corpus. The output of the model is the probability of the next word in a sequence of words (i.e. after 'I' one probable word is 'am' for instance). Once the model learned how to 'speak' in english, we generated new sentences limiting its length to 13 words since it is the median length of famous quotes. Ok the syntax is not perfect but the generator links successfully ideas like 'terrorism' and 'violence' or 'floods' and 'boat'. With more time and resources we could surely generate better quotes! --> invest in [Aficionada!](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+We selected a corpus of the 1000 most famous quotes across years, ranging from 98263 to 1028 occurrences in newspapers. The text was preprocessed in order to remove punctuation and numbers as well as multiple spacing. We trained a model (ML again!!!) on this corpus that learned the syntax and vocabulary of this corpus. The output of the model is the probability of the next word in a sequence of words (i.e. after 'I' one probable word is 'am' for instance). Once the model learned how to 'speak' in English, we generated new sentences limiting its length to 13 words since it is the median length of famous quotes. Ok the syntax is not perfect but the generator links successfully ideas like 'terrorism' and 'violence' or 'floods' and 'boat'. With more time and resources we could surely generate better quotes! --> invest in [Aficionada!](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 Example of cool generated sentences:
 > ”Ensure the safety and democracy in the face of enemies of freedom europe.”
@@ -214,7 +214,7 @@ Wow some are very powerful and inspiring.
 
 
 ### Conclusion
-We hope you enjoyed your time on this website. We saw that the syntax and sentiment of a quote is not that important in making it famous or not. Most of the emitters of famous quotes are politicians, but it is not surpising because they are highly mediatized in the newspapers. Maybe they have a special talent with words? However, as a good data scientist you must aknowledge the limitations of your analysis. First we saw that most of the quotes we have are from North America so the results are a bit biaised. Also we didn't take into account the intonation or speech context which might play an important role on how a quote is portrayed in the press. Anyway, quick go and check if your quote buzzed on the internet!
+We hope you enjoyed your time on this website. We saw that the syntax and sentiment of a quote are not that important in making it famous or not. Most of the emitters of famous quotes are politicians, but it is not surprising because they are highly mediatized in the newspapers. Maybe they have a special talent with words? However, as a good data scientist, you must acknowledge the limitations of your analysis. First, we saw that most of the quotes we have are from North America so the results are a bit biased. Also, we didn't take into account the intonation or speech context which might play an important role in how a quote is portrayed in the press. Anyway, quick go and check if your quote buzzed on the internet!
 
 <p style="text-align:center">
    <font size="5" id="lien">
