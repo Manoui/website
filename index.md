@@ -14,7 +14,7 @@
 </p>
 
 
-<u>First, try to write something, we’ll tell you if your words have a chance to become famous:</u>
+**First, try to write something, we’ll tell you if your words have a chance to become famous:**
 
 {% include button_1.html %}
 
