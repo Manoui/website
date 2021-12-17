@@ -45,7 +45,7 @@
 {% include quotes_generator_final.html %}
 
 ### **Inspiring no?** Post it right away on Twitter or Instagram and let the magic happen... 
-(What? The syntax isn't right? ? Maybe our generator needs a little bit more training)
+(What? The syntax isn't right? Maybe our generator needs a little bit more training)
 
 ***
 
