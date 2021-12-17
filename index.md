@@ -151,7 +151,7 @@ Example of generated sentences:
 > ”She weren’t my daughter it would be so much easier for her to.”
 
 
-**Conclusion: the topic of a quote is of high importance, even more than the speaker's features or the characteristics of the sentence. Indeed, "Content is more than "subject matter. ' It is all the feelings and ideas you bring to your painting." - Rene Huyghe. The choice of words and the speaker are less important than the information it conveys. **
+**Conclusion: the topic of a quote is of high importance, even more than the speaker's features or the characteristics of the sentence. Indeed, "Content is more than "subject matter. ' It is all the feelings and ideas you bring to your painting." - Rene Huyghe. The choice of words and the speaker are less important than the information it conveys. Didn't take into account intonation or speech context.**
 
 
 #### References
