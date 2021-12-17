@@ -1,4 +1,7 @@
-
+/
+/
+/
+/
 
 <p style="text-align:center">
    <font size="5" id="lien">
@@ -7,6 +10,7 @@
 
 </p>
 
+<p style="color:white">ada</p>
 
      
 <u>First, try to write something, we’ll tell you if your words have a chance to become famous:</u>
