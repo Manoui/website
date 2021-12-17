@@ -5,9 +5,7 @@
 Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to be famous? Then this website might help you!
 
 First, try to write something, we’ll tell you if your words will become famous:
-"boo4"
 
-"booo"
 {% include button_1.html %}
 
 Anyway, you better try our famous quote generator if you want to succeed, 100% chance of success. Click on the button and here we go:
@@ -119,11 +117,16 @@ We also considered several additional parameters such as:
 * Grammatical features based on [Part-of-speech tags](https://spacy.io/usage/linguistic-features#pos-tagging) to quantify the number of adverbs, nouns, etc. that a quote contains. This allowed attributing a complexity score to the quotation.
 * Named Entity Recognition [(NER)](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da) to identify the number of times a quote mentions a date, a person, an organization, an event, a language, etc.
 
-**Let see if your intuition is correct and whether supervised learning methods agree with you ;)**
+**Let see if your intuition is correct and what machine learning thinks about it**
 
-Using logistic regression and random forest as supervised learning classifiers, we were able to predict the fame of new quotes with an accuracy of 0.74 %. Here below, you can see which coefficients and their associated feature contributes the most to the prediction.
+Have you heard about Machine Learning (ML for close friends)? Anyway don't worry this is not time and place to discuss gradient descent algorihtms.
+The only thing you need to know is that we created ML models that given an unseen quote, can predict if the quote will be famous or not. We trained a Random Forest and Logistic Regression models (don't worry about the names). And our model predicted the fame of new quotes with an accuracy of 74 %! That is to say it could tell in 74% of cases if a quote was famous or not. Here below, you can see which coefficients and their associated feature contributes the most to the prediction.
+
+This is for the firt Logistic Regression model:
 
 {% include logistic_regression_coefficients.html %}
+
+This is for the Random Forest model:
 
 {% include rf_coefficients.html %}
 
@@ -131,27 +134,26 @@ Using logistic regression and random forest as supervised learning classifiers, 
 ###Famous quote generator:
 Some further explanation, about the quote generator you used at the top.
 
-We selected a corpus of the 1000 most famous quotes across years, ranging from 98263 to 1028 occurrences. The text was preprocessed in order to remove punctuation and numbers as well as multiple spacing. An LSTM model was created and trained on 100 epoch using this corpus. The output of the model is the probability of the next word in the sequence. Once the model was trained, we generated new sentences using a random seed of 4 words and limiting its length to 13 words since it is the median length of famous quotes. 
+We selected a corpus of the 1000 most famous quotes across years, ranging from 98263 to 1028 occurrences in newspapers. The text was preprocessed in order to remove punctuation and numbers as well as multiple spacing. We trained a model (ML again!!!) on this corpus that learned the syntax and vocabulary of this corpus. The output of the model is the probability of the next word in a sequence of words (i.e. after 'I' one probable word is 'am' for instance). Once the model learned how to 'speak' in english, we generated new sentences limiting its length to 13 words since it is the median length of famous quotes. Ok the syntax is not perfect but the generator links successfully ideas like 'terrorism' and 'violence' or 'floods' and 'boat'. With more time and resources we could surely generate better quotes! --> invest in Aficionada!
 
-Example of generated sentences:
+Example of cool generated sentences:
 > ”Ensure the safety and democracy in the face of enemies of freedom europe.”
 > 
-> ”And that was big she was crying when she saw me for republicans.”
+> ”And that was big, she was crying when she saw me for republicans.”
 > 
 > ”These murderous attacks have once again showed us the total hatred of humanity.”
 > 
-> ”Values will be enhanced when women are granted their rights the meyerowitz stories.”
-> 
-> ”Relax there should be been an evacuation divinity original sin sin sin sin.”
+> ”Often innocent blood doesn much matter to the dead they re going to.”
 > 
 > ”Are united beyond all borders in horror and sorrow but also in determination.”
 > 
-> ”Assad regime and has been times of national tragedy took pill in ibiza.”
-> 
-> ”She weren’t my daughter it would be so much easier for her to.”
+> ”In political history what important is that everybody work together to ensure to.”
+
+Wow some are very emotional and inspiring.
 
 
-**Conclusion: the topic of a quote is of high importance, even more than the speaker's features or the characteristics of the sentence. Indeed, "Content is more than "subject matter. ' It is all the feelings and ideas you bring to your painting." - Rene Huyghe. The choice of words and the speaker are less important than the information it conveys. Didn't take into account intonation or speech context.**
+### Conclusion
+The topic of a quote is of high importance, even more than the speaker's features or the characteristics of the sentence. Indeed, "Content is more than "subject matter. ' It is all the feelings and ideas you bring to your painting." - Rene Huyghe. The choice of words and the speaker are less important than the information it conveys. Didn't take into account intonation or speech context.
 
 
 #### References
