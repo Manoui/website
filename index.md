@@ -34,10 +34,9 @@
 ### First, try to write something, we’ll tell you if your words have a chance to become famous (max 140 characters):
 {% include button_1.html %}
 
-### Anyway, you better try our **famous quote generator** if you want to succeed (100% chance of success)
-
+### Anyway, you better try our **famous quote generator** if you want to succeed
 <p style="text-align:center">
-   <font size="6" id="lien">
+   <font size="4" id="lien">
      <b>Click on the button and here we go:</b>
    </font>
 </p>
@@ -49,7 +48,7 @@
 (What? The syntax isn't right? ? Maybe our generator needs a little bit more training)
 
 <p style="text-align:center">
-   <font size="6" id="lien">
+   <font size="4" id="lien">
      <b>While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous.</b>
    </font>
 </p>
