@@ -1,22 +1,21 @@
 
 
-> # “Shoot for the moon. Even if you miss, you'll land among the stars.” Norman Vincent Peale
+# “Shoot for the moon. Even if you miss, you'll land among the stars.” Norman Vincent Peale
  
-Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to be famous? Then this website might help you!
+Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to be **famous**? Then this website might help you!
 
-First, try to write something, we’ll tell you if your words will become famous:
+**First, try to write something, we’ll tell you if your words have a chance to become famous:**
 
 {% include button_1.html %}
 
-Anyway, you better try our famous quote generator if you want to succeed, 100% chance of success. Click on the button and here we go:
-** WIDGET (quote generator)**
+Anyway, you better try our **famous quote generator** if you want to succeed, 100% chance of success. Click on the button and here we go:
 
 {% include quotes_generator_final.html %}
 
-Inspiring no? Post it right away on Twitter or Instagram and let the magic happen...
+**Inspiring no?** Post it right away on Twitter or Instagram and let the magic happen...
 (What? nonsense you’re saying? I think that you are just not ready for that new vision on syntax)
 
-** While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous. **
+**While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous. **
 
 Just think about politicians or advertisers that convinced you with just a few words, just by saying 'Yes we can!', 'Make America great again' or 'Logarithms are our friends'. This tiny little sentences made of 3 or 4 words have so much power when pronounced by Barack Obama, Donald Trump or Robert West that they are engraved forever in your mind. Not sure your colleague's remark in front of the coffee machine 'The weather is nice today.' will have as much impact on your brain...
 Why does these quotes are so powerful? Is it because of their speaker? Is it because of the quote in itself? 
@@ -42,7 +41,7 @@ OK enough with the boring pre-processing steps (crucial in data science tho).
 Now let us dive into the data and see if we can answer our existential question.
 
 
-### Who are the most cited people on this planet?
+## Who are the most cited people on this planet?
 
 First, you can take a look at the top 20 of people emitting the most famous quotes, along with their number of cited quotes and THE quote with the most occurrences.
 
@@ -66,7 +65,7 @@ You may already have realized that most of the quotations we collected from Quot
 
 Oups there seem to be a bias in our dataset... Indeed most of the english quotes are from North America or Europe, and little from Africa, South America, Asia and Australia. It seems that quotes that are mediatized in english news articles are mainly from U.S.A., Canada and Europe, which is not surprising. We thus need to be careful in any conclusion we draw from our analysis since they might not apply universally.
 
-### Take your bets!
+## Take your bets!
                                                              
 Now it is your turn to take guesses on what makes the fame of a quote by selecting some parameters and seeing their distribution across famous and ‘non-famous’ quotes. You can see parameters at the speakers level, as well as at the quote level. Indeed, using [TextBlob](https://pypi.org/project/textblob/0.9.0/) a natural language processing (NLP) library we defined the polarity and subjectivity of a quote. Polarity scores were calculated on the quotes and range from -1 (negative) to 1 (positive), with 0 representing neutral quotes. Subjectivity scores range from 0 to 1 and we consider subjective quotes with a score above 0.5. 
 So, which individual features do you predict can differentiate famous from non-famous quotes?
@@ -95,7 +94,7 @@ It is also interesting the distribution of topics among famous speakers.
 {% include nationality_occupation_complexity.html %}
 
 
-### Predict fame
+## How to be a mainstream famous quote emitter:
 
 You may have already developed an intuition that most famous quotes are emitted by politicians in North America, covering mostly politics or justice. 
 
@@ -104,7 +103,7 @@ You may have already developed an intuition that most famous quotes are emitted 
 
 Would you want to consider some additional parameters to predict the fame of a quote? 
 
-**Did you think about the importance of words? What words would you expect to see based on previous observations ?**
+## Is 'platypus' often use in famous sentences?
 {% include word_occurrence_stopwords.html %}
 
 In the plot below you can slide over the plot with your cursor to see the most used words in famous versus non-famous quotes. There are a lot of similarities in the highly frequent words, such as the use of ‘people’, ‘going’, ‘think’, etc. But some frequent words are specific to the famous quotes: ‘us’, ‘president’, ‘country’, etc. as compared to ‘like’, ‘really’, ’time’ in non-famous quotes.
@@ -117,9 +116,9 @@ We also considered several additional parameters such as:
 * Grammatical features based on [Part-of-speech tags](https://spacy.io/usage/linguistic-features#pos-tagging) to quantify the number of adverbs, nouns, etc. that a quote contains. This allowed attributing a complexity score to the quotation.
 * Named Entity Recognition [(NER)](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da) to identify the number of times a quote mentions a date, a person, an organization, an event, a language, etc.
 
-**Let see if your intuition is correct and what machine learning thinks about it**
+## What does machine learning think about it?**
 
-Have you heard about Machine Learning (ML for close friends)? Anyway don't worry this is not time and place to discuss gradient descent algorihtms.
+Now let's check if your intuitions were correct. Have you heard about Machine Learning (ML for close friends)? Anyway don't worry this is not time and place to discuss gradient descent algorihtms.
 The only thing you need to know is that we created ML models that given an unseen quote, can predict if the quote will be famous or not. We trained a Random Forest and Logistic Regression models (don't worry about the names). And our model predicted the fame of new quotes with an accuracy of 74 %! That is to say it could tell in 74% of cases if a quote was famous or not. Here below, you can see which coefficients and their associated feature contributes the most to the prediction.
 
 This is for the firt Logistic Regression model:
