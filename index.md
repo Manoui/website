@@ -77,19 +77,19 @@ Oups there seem to be a bias in our dataset... Indeed most of the english quotes
 
 ## Take your bets!
                                                              
-Now it is your turn to take guesses on what makes the fame of a quote by selecting some parameters and seeing their distribution across famous and ‘non-famous’ quotes. You can see parameters at the speakers level, as well as at the quote level. Indeed, using [TextBlob](https://pypi.org/project/textblob/0.9.0/) a natural language processing (NLP) library we defined the polarity and subjectivity of a quote. Polarity scores were calculated on the quotes and range from -1 (negative) to 1 (positive), with 0 representing neutral quotes. Subjectivity scores range from 0 to 1 and we consider subjective quotes with a score above 0.5 (subjective quotes express an opinion or feeling as opposed to factual quotes).
-So, which individual features do you predict can differentiate famous from non-famous quotes? (more info about the features under the figure)
+Now it is your turn to take guesses on what makes the fame of a quote by selecting some parameters and seeing their distribution across famous and ‘non-famous’ quotes. You can see parameters at the speakers level, as well as at the quote level. Using [TextBlob](https://pypi.org/project/textblob/0.9.0/) a natural language processing (NLP) library we defined the polarity and subjectivity of a quote. Polarity score range from -1 (negative) to 1 (positive), with 0 representing neutral quotes. Subjectivity score range from 0 to 1 and we consider subjective quotes with a score above 0.5 (subjective quotes express an opinion or feeling as opposed to factual quotes).
+So, which individual features do you think can differentiate famous from non-famous quotes? (more info about the features under the figure)
 
 {% include proportion_features_famous_nonfamous.html %}
 
 The jobs are defined as followed:
-* POLITICS: 'POLITICIAN', 'JUDGE', 'LAWYER', 'SOCIAL ACTIVIST' etc
-* NEGATIVE_CONNOTATION_JOB:'PORNOGRAPHIC ACTOR', 'MAFIOSO', 'POKER PLAYER', 'EXTREMIST' etc
-* MEDIA_ARTS: 'COMEDIAN', 'SINGER', 'PRESENTER' etc
-* MEDIA_SCIENCE: 'INVENTOR', 'ASTRONAUT' etc (such as Elon Musk)
-* ARTS: 'PHOTOGRAPHER', 'FILM DIRECTOR', 'PAINTER' etc
-* SPORTS: 'ATHLETES', 'SOCCER PLAYER', 'COACH' etc
-* SCIENCES: 'PHYSICIAN', 'CHEMIST' etc
+* POLITICS: politician, judge, lawyer, social activist etc
+* NEGATIVE_CONNOTATION_JOB: pornographic actor, mafioso, poker player, extremist etc
+* MEDIA_ARTS: comedian, singer, presenter etc
+* MEDIA_SCIENCE: inventor, astronaut etc (such as Elon Musk)
+* ARTS: photographer, film maker, painter etc
+* SPORTS: athletes, soccer player, coach etc
+* SCIENCES: physician, chemist etc
 
 Also, you may want to consider combining some features. What do you observe ?
 
@@ -116,25 +116,25 @@ We also analyzed if a quote mentioned a place, a person, a work of art, an organ
 {% include theme_analysis.html %}
 
 The key is the following:
-* PERSON People, including fictional.\
-* NORP Nationalities or religious or political groups.\
-* FAC Buildings, airports, highways, bridges, etc.\
-* ORG Companies, agencies, institutions, etc.\
-* GPE Countries, cities, states.\
-* LOC Non-GPE locations, mountain ranges, bodies of water.\
-* PRODUCT Objects, vehicles, foods, etc. (Not services.)\
-* EVENT Named hurricanes, battles, wars, sports events, etc.\
-* WORK_OF_ART Titles of books, songs, etc.\
-* LAW Named documents made into laws.\
-* LANGUAGE Any named language.\
-* DATE Absolute or relative dates or periods.\
-* TIME Times smaller than a day.\
-* PERCENT Percentage, including "%".\
-* MONEY Monetary values, including unit.\
-* QUANTITY Measurements, as of weight or distance.\
-* ORDINAL "first", "second", etc.\
-* CARDINAL Numerals that do not fall under another type
-* NONE no entity detected
+* PERSON: People, including fictional.
+* NORP: Nationalities or religious or political groups.
+* FAC: Buildings, airports, highways, bridges, etc.
+* ORG: Companies, agencies, institutions, etc.
+* GPE: Countries, cities, states.
+* LOC: Non-GPE locations, mountain ranges, bodies of water.
+* PRODUCT: Objects, vehicles, foods, etc. (Not services.)
+* EVENT: Named hurricanes, battles, wars, sports events, etc.
+* WORK_OF_ART: Titles of books, songs, etc.
+* LAW: Named documents made into laws.
+* LANGUAGE: Any named language.
+* DATE: Absolute or relative dates or periods.
+* TIME: Times smaller than a day.
+* PERCENT: Percentage, including "%".
+* MONEY: Monetary values, including unit.
+* QUANTITY: Measurements, as of weight or distance.
+* ORDINAL: "first", "second", etc.
+* CARDINAL: Numerals that do not fall under another type
+* NONE: no entity detected
 
 As you can see, making reference to one of the entity mentioned aboved doesn't seem to play a role in the fame of a quote. The distribution is more or less the same between famous and non-famous quotes so we better look somewhere else...
 
