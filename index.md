@@ -91,14 +91,16 @@ Perhaps you are wondering, what are the quotes about? Let's take a look into the
 
 You may have already guessed that most famous quotations over time are related to politics, but justice also appears frequently. Whereas arts and environment are a bit less likely (maybe consequence of a certain climatosceptic presisdent...?). Quotes were tagged using [Empath](https://arxiv.org/pdf/1602.06979.pdf), a tool that can generate and validate new lexical categories on demand from a small set of words, which were manually defined.
 
-<img src="images/topics_quotes.jpeg" width="600" height="300"> 
+{% include topic_analysis.html %}
 
 Both types of quotes have a high percentage of quotes related to justice. Sports represents 21% of non-famous quotes, whereas it only makes up for 4.73% of famous quotes seems. Politics is in contrast twice much more present in famous quotes compared to non-famous.
 
 It is also interesting the distribution of topics among famous speakers, we took a look at the quotes from Trump and Pope Francis:
 
-<img src="images/example_topics.jpeg" width="600" height="300"> 
+{% include topic_analysis_DT_PF.html %}
 
+
+{% include theme_analysis.html %}
 
 ## How to be a mainstream famous quote emitter:
 
