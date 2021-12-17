@@ -132,8 +132,15 @@ We also considered several additional parameters such as:
 * The historical popularity index (HPI) of a speaker.
 * Grammatical features based on [Part-of-speech tags](https://spacy.io/usage/linguistic-features#pos-tagging) to quantify the number of adverbs, nouns, etc. that a quote contains. This allowed attributing a complexity score to the quotation.
 * Named Entity Recognition [(NER)](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da) to identify the number of times a quote mentions a date, a person, an organization, an event, a language, etc.
+* Complexity score using [Gunning Fog rating](https://en.wikipedia.org/wiki/Gunning_fog_index)
 
 We chose only to present the most interesting results in this article but you can go and check on our Github for more about the methods and results:
+
+Here are the main info about famous and not famous quotes:
+* 50% of the famous quote have at least 13 words compared to 20 for non famous -> non-famous quotes tend to be longer
+* 50% of the famous quote have at least a polarity of 0 (neutral) compared to 0.04 (neutral) for non-famous -> no difference
+* 50% of the famous quote have at least a subjectivity of 0.35 (quite factual) compared to 0.41 (quite factual) for non-famous -> no difference
+* 50% of the famous quote have at least a Gunning Fog complexity score of 16 (quite complicated) compared to 14 (quite complicated) for non-famous -> no difference
 
 ## And what does machine learning think about it?**
 
