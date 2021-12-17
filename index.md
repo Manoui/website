@@ -34,14 +34,26 @@
 ### First, try to write something, we’ll tell you if your words have a chance to become famous (max 140 characters):
 {% include button_1.html %}
 
-### Anyway, you better try our **famous quote generator** if you want to succeed (100% chance of success). Click on the button and here we go:
+### Anyway, you better try our **famous quote generator** if you want to succeed (100% chance of success)
+
+<p style="text-align:center">
+   <font size="6" id="lien">
+     <b>Click on the button and here we go:</b>
+   </font>
+</p>
+
 
 {% include quotes_generator_final.html %}
 
 ### **Inspiring no?** Post it right away on Twitter or Instagram and let the magic happen... 
-### (What? The syntax isn't right? ? Maybe our generator needs a little bit more training.)
+(What? The syntax isn't right? ? Maybe our generator needs a little bit more training)
 
-### While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous.**
+<p style="text-align:center">
+   <font size="6" id="lien">
+     <b>While you are waiting for the fame to come thanks to your quote, you can explore the data and read more about what makes a quote famous.</b>
+   </font>
+</p>
+
 
 Just think about politicians or advertisers that convinced you with just a few words, just by saying 'Yes we can!', 'Make America great again' or 'Logarithms are our friends'. These tiny little sentences made of 3 or 4 words have so much power when pronounced by Barack Obama, Donald Trump, or Robert West that they are engraved forever in your mind. Not sure your colleague's remark in front of the coffee machine 'The weather is nice today.' will have as much impact on your brain...
 Why do these quotes are so powerful? Is it because of their speaker? Is it because of the quote in itself? 
