@@ -6,7 +6,7 @@
 /
 
 <p style="text-align:center">
-   <font size="3" id="lien">
+   <font size="4" id="lien">
       <strong>
       Did you ever dream of your words like the ones of Shakespeare, Einstein or Trump remaining forever etched in the memory of humanity? Would you like to befamous? Then this website might help you!</strong>
    </font>
